@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Electronics",
+    "categoryId": "electronics",
+    "image": "https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?w=1380&t=st=1708269259~exp=1708269859~hmac=4f6d4936d88d06dcea6e8317c273e241379bfdd507eadd8f8c021c632082da21"
+  },
+  {
+    "name": "Fashion",
+    "categoryId": "fashion",
+    "image": "https://img.freepik.com/free-photo/multi-colored-garments-hanging-coathangers-boutique-store-generated-by-ai_188544-19854.jpg?t=st=1708269002~exp=1708272602~hmac=a0e33d62e84ffe46339f091feaab7dfa8c2a095103f294df8d1963d7ea1cae4e&w=1380"
+  },
+  {
+    "name": "Home & Garden",
+    "categoryId": "home&garden",
+    "image": "https://img.freepik.com/free-vector/scene-with-family-having-good-time-home_1308-43968.jpg?w=1380&t=st=1708269327~exp=1708269927~hmac=41899d13b33d74ab208e8c11de0b3078a9bbc7bc71336cb887acbdcab8659b5f"
+  },
+  {
+    "name": "Beauty & Personal Care",
+    "categoryId": "beauty&personalCare",
+    "image": "https://img.freepik.com/free-photo/top-view-spa-element-collection_23-2148200221.jpg?w=1380&t=st=1708269387~exp=1708269987~hmac=0c428788ba007e3de4ed6a49dafd5832fa798c6ecb4b8c600e8847ae9a555e14"
+  },
+  {
+    "name": "Health & Wellnes",
+    "categoryId": "health&wellnes",
+    "image": "https://img.freepik.com/free-photo/flat-lay-health-still-life-arrangement-with-copy-space_23-2148854064.jpg?w=1380&t=st=1708269451~exp=1708270051~hmac=6d54b0fbf80db82d9306692bf9cad4764113be89a5fb70b29ffab5ffba2a4826"
+  },
+  {
+    "name": "Sports & Outdoors",
+    "categoryId": "sports&outdoors",
+    "image": "https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?w=1380&t=st=1708269471~exp=1708270071~hmac=5745c5717be2973a0da400d5a3c14a632870cba4257ff490525314f74bb79ffd"
+  },
+  {
+    "name": "Automotive",
+    "categoryId": "automotive",
+    "image": "https://img.freepik.com/free-vector/robotic-arms-car-assembly-line-manufacturing-process-automotive-industry-realistic-composition-closeup-image_1284-29019.jpg?w=996&t=st=1708269488~exp=1708270088~hmac=eb47bbef90951470f90a8b5586c78bab6bc325f7a3f759ddc54602e6c3591b9f"
+  },
+  {
+    "name": "Toys & Games",
+    "categoryId": "toys&games",
+    "image": "https://img.freepik.com/free-photo/set-children-toys_93675-130772.jpg?w=1380&t=st=1708269525~exp=1708270125~hmac=8961c75b5159ac2c2e2c6e4b47f9bc58af8e2cf8cf6625ecae7bdcca478cf9b3"
+  },
+  {
+    "name": "Books & Media",
+    "categoryId": "books&media",
+    "image": "https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150063014.jpg?w=1380&t=st=1708269544~exp=1708270144~hmac=e32bf5c576aff0487dbec8e0ac63272626e94f584f5c2d252d8ccf361f5a6fc5"
+  },
+  {
+    "name": "Food & Beverages",
+    "categoryId": "food&beverages",
+    "image": "https://img.freepik.com/free-photo/top-view-fried-potatoes-with-seasonings-bread-loafs-different-vegetables-dark-desk_140725-115312.jpg?w=1380&t=st=1708269571~exp=1708270171~hmac=679d1b5311ca23c04ce4216898467c68dcbf109fc9ac47afb1db1d3aa236976f"
+  },
+  {
+    "name": "Office Supplies",
+    "categoryId": "officesupplies",
+    "image": "https://img.freepik.com/free-photo/composition-with-notebook-pens_23-2148745825.jpg?w=1380&t=st=1708269603~exp=1708270203~hmac=e4bfee819bef9827340cc7eff108fa376427fa5c2567f448af6cbb60b9277901"
+  },
+  {
+    "name": "Pets",
+    "categoryId": "pets",
+    "image": "https://img.freepik.com/free-photo/cute-puppy-group-sitting-looking-camera-indoors-generated-by-artificial-intelligence_188544-113182.jpg?t=st=1708269656~exp=1708273256~hmac=d75106b2bf5849512517c084bad569412965ead22ae012f4a4a8575fc486b998&w=1380"
+  },
+  {
+    "name": "Jewelry & Accessories",
+    "categoryId": "jewelry&accessories",
+    "image": "https://img.freepik.com/free-photo/gold-jewellery-table-with-other-gold-jewellery_1340-42836.jpg?t=st=1708269677~exp=1708273277~hmac=1b265fe34c22cc133ef97b9ee13b7d691372e3b950f3c338f634ca148ad696fc&w=1380"
+  },
+  {
+    "name": "Arts & Crafts",
+    "categoryId": "arts&crafts",
+    "image": "https://img.freepik.com/free-photo/artists-colorful-brushes-oil-paints-wooden-palette-top-view-copy-space-ai-generative_123827-24926.jpg?t=st=1708269808~exp=1708273408~hmac=603c8bf497cc85e6be37e781e8b541045d520f491a799ef6deb19e9a281aebd8&w=1380"
+  }
+]

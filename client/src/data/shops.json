@@ -1,0 +1,50 @@
+[
+  {
+    "image": "https://img.freepik.com/premium-photo/sport-clothes-store-shopping-mall-ai_894067-7200.jpg?w=1380",
+    "name": "Dhaka Emporium",
+    "email": "dhakaemporium@gmail.com",
+    "number_of_products": 20,
+    "name_of_products": ["Classic Creations", "Decadent Delights"],
+    "purchased": 7
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/sport-clothes-store-shopping-mall-ai_894067-7200.jpg?w=1380",
+    "name": "Abdullah Zone",
+    "email": "Abdullahzone@gmail.com",
+    "number_of_products": 20,
+    "name_of_products": ["Classic Creations", "Decadent Delights"],
+    "purchased": 6
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/photo-real-estate-building_896360-2767.jpg?w=1380",
+    "name": "Proloy Point",
+    "email": "proloypoint@gmail.com",
+    "number_of_products": 20,
+    "name_of_products": ["Classic Creations", "Decadent Delights"],
+    "purchased": 5
+  },
+  {
+    "image": "https://img.freepik.com/free-photo/two-warehouse-workers-walking-distribution-storage-area-discussing-about-logistics-organization_342744-1541.jpg?w=1380&t=st=1708256978~exp=1708257578~hmac=95219f4ff7e1b0899ce062880c7333e8b9797aca3360109718a86f9a5b88f788",
+    "name": "Ice Cream Bari",
+    "email": "icecreambari@gmail.com",
+    "number_of_products": 20,
+    "name_of_products": ["Classic Creations", "Decadent Delights"],
+    "purchased": 4
+  },
+  {
+    "image": "https://img.freepik.com/free-photo/low-angle-view-happy-warehouse-workers-communicating-while-working-with-shipment-industrial-storage-compartment_637285-4208.jpg?t=st=1708256978~exp=1708257578~hmac=82e379692138247f1fcc6d7aa6a15ddfe6855948e2d89064cbea3f4b021d72bf",
+    "name": "Shahin Enterprise",
+    "email": "shahinenterprise@gmail.com",
+    "number_of_products": 20,
+    "name_of_products": ["Classic Creations", "Decadent Delights"],
+    "purchased": 3
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/warehouse-aisle-ikea-store_33910-305.jpg?w=1380",
+    "name": "Ma House",
+    "email": "mahouse@gmail.com",
+    "number_of_products": 20,
+    "name_of_products": ["Classic Creations", "Decadent Delights"],
+    "purchased": 2
+  }
+]

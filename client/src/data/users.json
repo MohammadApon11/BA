@@ -1,0 +1,14 @@
+[
+  {
+    "email": "admin@gmail.com",
+    "role": "admin",
+    "image": "https://img.freepik.com/free-photo/worldface-british-guy-white-background_53876-14467.jpg?w=740&t=st=1708259177~exp=1708259777~hmac=8eb162b1c75c8d8da052e0b040858e6d232d7b9c204296f0fcb1a4e37e8a68a5",
+    "name": "Mohammad Apon"
+  },
+  {
+    "email": "shopowner@gmail.com",
+    "role": "shopowner",
+    "image": "https://img.freepik.com/free-photo/african-man-successful-entrepreneur-wearing-glasses-face-portrait_53876-143244.jpg?w=996&t=st=1708259077~exp=1708259677~hmac=e62c7377a478417bc118f2fa4fd0702b8f63c64b550f587eaabadbe5eb830f47",
+    "name": "Mohammad Apon"
+  }
+]

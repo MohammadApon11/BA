@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-r-none {
+  border-right-width: 0 !important;
+}
+
+/* sweet alert 2 style swal2-confirm */
+.swal2-confirm {
+  padding: 0 15px;
+  /* width: 60px;
+  height: 40px; */
+  display: flex;
+  font-size: 16px !important;
+}
+.swal2-cancel {
+  padding: 0 15px;
+}
+/* progress bar style */
+.progress_bar span {
+  display: none !important;
+}
+.container {
+  background-color: gray;
+  height: 6px;
+  border-radius: 5px;
+}
+.barCompleted {
+  background-color: #05bc61;
+  height: 6px;
+  border-radius: 5px;
+  transition: all 0.5 ease-in-out;
+}
+
+/* radion button */
+.radio-info {
+  border: 1px solid rgba(31, 131, 247, 0.555);
+}
+
+.addressInputBorder {
+  border: 1px solid #495057;
+}

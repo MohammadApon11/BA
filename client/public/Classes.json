@@ -1,0 +1,50 @@
+[
+    {
+        "image":"https://images.unsplash.com/photo-1519311965067-36d3e5f33d39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltJTIwYm95c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "className":"Gymnastics Preschool",
+        "instructor":"Kevin Copper",
+        "available_seats":20,
+        "price":"350",
+        "students":30
+    },
+    {
+        "image":"https://plus.unsplash.com/premium_photo-1685231505282-4ba3e09eec47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vdGJhbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "className":"Fitness Field",
+        "instructor":"Oddie Kal",
+        "available_seats":30,
+        "price":"450",
+        "students":38
+    },
+    {
+        "image":"https://images.unsplash.com/photo-1505748641491-f7ee2fd6fb4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vdGJhbGwlMjBwbGF5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "className":"Intermediate Boys",
+        "instructor":"Charlie Path",
+        "available_seats":40,
+        "price":"550",
+        "students":35
+    },
+    {
+        "image":"https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdvcmtvdXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "className":"Advanced Boys",
+        "instructor":"Jon Doe",
+        "available_seats":25,
+        "price":"650",
+        "students":40
+    },
+    {
+        "image":"https://plus.unsplash.com/premium_photo-1684888562275-09850d230c4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vdGJhbGwlMjBwbGF5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "className":"Tumbling Classes",
+        "instructor":"Michel Jackson",
+        "available_seats":30,
+        "price":"400",
+        "students":50
+    },
+    {
+        "image":"https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb3RiYWxsJTIwcGxheWVyJTIwcG9pbnRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "className":"On Field",
+        "instructor":"Stiphen Hocking",
+        "available_seats":0,
+        "price":"1000",
+        "students":20
+    }
+]

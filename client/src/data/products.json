@@ -1,0 +1,436 @@
+[
+  {
+    "name": "Iphone 14 Pro Max",
+    "categoryId": "electronics",
+    "image": "https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?w=1380&t=st=1708269259~exp=1708269859~hmac=4f6d4936d88d06dcea6e8317c273e241379bfdd507eadd8f8c021c632082da21",
+    "subImages": [
+      "https://img.freepik.com/free-vector/realistic-front-view-smartphone-mockup-mobile-iphone-purple-frame-with-blank-white-display-vector_90220-959.jpg?w=740&t=st=1708412652~exp=1708413252~hmac=18d0010c37ceab6901dc92bf5fae254f0ff2e314460b006a551dbee0d98fac52",
+      "https://img.freepik.com/free-photo/smartphones-balancing-with-blue-background_23-2150271748.jpg?w=740&t=st=1708412720~exp=1708413320~hmac=b8e9eb16e478b7ab2d97cd39ec9bbba6a453cfe7d376bc07770626fcd657de7e",
+      "https://img.freepik.com/free-vector/realistic-smartphone-device_52683-29765.jpg?w=740&t=st=1708412737~exp=1708413337~hmac=218565b69467a2a573aa446ab8725a37723d7ec30bc218ca71cc5e572bf70133",
+      "https://img.freepik.com/free-vector/realistic-white-smartphone-design-with-three-cameras_23-2148374059.jpg?w=740&t=st=1708412762~exp=1708413362~hmac=800245d95844da1f6fa6c8db15ace7d7bae921ed8ce995d01e9abfb2deedec49"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Iphone",
+    "available_quantity": 20,
+    "ratings": 4.5,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "iphone@gmail.com",
+    "description": "The latest iPhone version, featuring cutting-edge technology, enhanced performance, advanced camera capabilities, and stunning design innovations for users worldwide",
+    "brand": "iphone"
+  },
+  {
+    "name": "T-shirt",
+    "categoryId": "fashion",
+    "image": "https://img.freepik.com/free-photo/black-t-shirt-with-word-kiri-1-it_1340-37795.jpg?t=st=1708274081~exp=1708277681~hmac=dad83c7c271e566534e3e4f1999ba72a743d48dfa139ed09cec6d2075a74c4ef&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/white-t-shirts-with-copy-space-gray-background_53876-104920.jpg?w=1380&t=st=1708434210~exp=1708434810~hmac=ae2ef09cdc9a4031090bb8fc885722ef20ae3cd7a9bfe996284bf1fb6f78b988",
+      "https://img.freepik.com/free-psd/black-blank-tshirt-transparent-background_125540-4063.jpg?w=996&t=st=1708434230~exp=1708434830~hmac=870493c2592fe97643435a76e9bac68a4a632c58b5b2d427c5dcc07e3f04bc4b",
+      "https://img.freepik.com/free-psd/isolated-black-t-shirt-front_125540-1167.jpg?w=1380&t=st=1708434195~exp=1708434795~hmac=a91cd6950ee0e025b8233bdcaba0dad5fd42cc5b26d77d19b3749e672a5c3b18",
+      "https://img.freepik.com/free-psd/isolated-white-t-shirt-front-view_125540-1194.jpg?w=1380&t=st=1708434186~exp=1708434786~hmac=979ad3d4b4b8037ecc2ee8f1f55b265553cdd527aaf24bbd10b5a7907bd1c0d8"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Lotto",
+    "available_quantity": 20,
+    "ratings": 5,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "lotto@gamil.com",
+    "description": "Lotto Men's Sports T-Shirt With Vibrant Color and Durable Fabric",
+    "brand": "lotto"
+  },
+  {
+    "name": "Hazi Bila",
+    "categoryId": "home&garden",
+    "image": "https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799627.jpg?t=st=1708272759~exp=1708276359~hmac=c29b72ca6dd48e624848e52a7a0958ca0af4c70e459a762223486f48414ec9de&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/modern-residential-district-with-green-roof-balcony-generated-by-ai_188544-10276.jpg?w=1380&t=st=1708434372~exp=1708434972~hmac=c8c20ca5ca9c5d57c162c194750871e8d4f2866af636ad5a37c89492520b0389",
+      "https://img.freepik.com/free-photo/house-isolated-field_1303-23773.jpg?t=st=1708434369~exp=1708434969~hmac=c1bee11e8dedd167f625340b121abb8639ba479949d00dc40da95b269b296eca",
+      "https://img.freepik.com/free-photo/3d-rendering-white-wood-living-room-near-bedroom-upstair_105762-2197.jpg?w=1380&t=st=1708434385~exp=1708434985~hmac=7f2e2295079e2758feba0c782af60ed8dd358e02c4b171fe1f97b5c68df1d0d7",
+      "https://img.freepik.com/free-photo/3d-electric-car-building_23-2148972401.jpg?w=1380&t=st=1708434392~exp=1708434992~hmac=a58f66ed6831aac9982427ea1e543ed0b8fe26905e2902d3fb9a052d03de6e43"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Carlie",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "gmail@gmail.com",
+    "description": "A cozy haven with modern amenities, serene surroundings, spacious interiors, and breathtaking views, perfect for relaxation and rejuvenation",
+    "brand": "Prime Property Partners "
+  },
+  {
+    "name": "Wisal",
+    "categoryId": "beauty&personalCare",
+    "image": "https://img.freepik.com/free-photo/beautiful-roses-petals-arrangement_23-2150787646.jpg?t=st=1708274589~exp=1708278189~hmac=25a15a22c97d1050b7a4a16ac361ec43a35b36223751fd08c2ff8775fda63417&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/luxurious-perfume-bottle-adds-elegance-domestic-decor-generative-ai_188544-9637.jpg?t=st=1708434477~exp=1708438077~hmac=c722aea46e16033a4d0a86bb091d3c89e4eb0ef8d54118fd4403dbf06079d14a&w=1380",
+      "https://img.freepik.com/free-vector/perfume-bottle-black-silk-fabric-background_107791-1629.jpg?w=1380&t=st=1708434489~exp=1708435089~hmac=823a0cb0c831270b383c59e401c38644999d1105a2d1bb5ffd3ab8c75ea10c11",
+      "https://img.freepik.com/free-photo/perfume-bottle-unlabeled-beauty-product_53876-133315.jpg?w=1380&t=st=1708434495~exp=1708435095~hmac=4720001284ce9247eb9851c4cdcc428d351e3b8e4a212d8bee837cb208c05413",
+      "https://img.freepik.com/free-photo/dropper-bottle-resting-water-with-soft-pink-yellow-backdrop_157027-4355.jpg?w=1480&t=st=1708434445~exp=1708435045~hmac=21612ecfe1c9d220eefe0ebd684168929dab2d9497fc3957ae060087226aec83"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Carlie",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "gmail@gmail.com",
+    "description": "A captivating blend of floral and oriental notes, evoking warmth and elegance.",
+    "brand": "Ajmal Perfumes"
+  },
+  {
+    "name": "Premium yoga mat",
+    "categoryId": "health&wellnes",
+    "image": "https://img.freepik.com/free-photo/blue-yoga-mat-rolled-up-exercising-generated-by-ai_188544-20012.jpg?t=st=1708274979~exp=1708278579~hmac=08b667a0734b80dfabd4c7fbcf5788605d63b7d182673420ff4cfa78b32859b3&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-vector/realistic-yoga-myofascial-massage-icons-set-with-rug-mat-foam-roller-isolated-vector-illustration_1284-79048.jpg?w=1380&t=st=1708434570~exp=1708435170~hmac=26b8917c6b6399db39a416208f6a859102644cdce6ea37a9f752da936cdd68f0",
+      "https://img.freepik.com/free-vector/realistic-orange-yoga-rug-mat-icons-set-isolated-vector-illustration_1284-79042.jpg?w=996&t=st=1708434574~exp=1708435174~hmac=5468956085a41456c153a823a216bb0a0c75eb5184db9adb862e457e728d087b",
+      "https://img.freepik.com/free-photo/woman-rolling-yoga-mat_23-2149374684.jpg?w=1380&t=st=1708434584~exp=1708435184~hmac=b61775fd0026c35f62271a08ecef38257eb8a4f1762b772c63d06d0fbd64f576",
+      "https://img.freepik.com/free-photo/young-woman-with-yoga-essentials_23-2149502668.jpg?w=1380&t=st=1708434591~exp=1708435191~hmac=f7cfc58a1f1cbd227065b28b492aed1146dbc7d989f2aff9f9c2370c86799b99"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Liforme",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "liforme@gmail.com",
+    "description": "Eco-friendly, non-slip surface, cushioned support, ideal for yoga, Pilates, and meditation practice at home or studio.",
+    "brand": "Liforme"
+  },
+  {
+    "name": "High-quality soccer ball",
+    "categoryId": "sports&outdoors",
+    "image": "https://img.freepik.com/free-photo/futuristic-football-game-ball_23-2151153059.jpg?t=st=1708275199~exp=1708278799~hmac=58f3cfc8855bd87becfa7daccee04d61379fe093bed019a828dd9b0d4b507c4f&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-vector/vector-isolated-realistic-soccer-ball-white_1284-41932.jpg?w=740&t=st=1708434635~exp=1708435235~hmac=7e931bc27e06abc16112ec0dc745b562a5b2b902dbf4bde662b7a322a7d50595",
+      "https://img.freepik.com/free-photo/soccer-ball-white-line-stadium_1150-5285.jpg?w=1380&t=st=1708434646~exp=1708435246~hmac=29b79153ce234b366b04c38e42ef60a32057574815c5d5b66a229a228ad41854",
+      "https://img.freepik.com/free-vector/soccer-ball-background-flat-style_23-2147789481.jpg?t=st=1708434629~exp=1708435229~hmac=f0ed7b63b9332961faa92afe2036620144b6e7d33d2ebe8ae770942b4211dd5a",
+      "https://img.freepik.com/free-photo/still-life-colombian-national-soccer-team_23-2149734115.jpg?w=1380&t=st=1708434659~exp=1708435259~hmac=b627e9d35883fe5eed6d78856da8ab1e8ebbd188fb751242068337a64564aded"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Adidas",
+    "available_quantity": 20,
+    "ratings": 5,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "adidas@gmail.com",
+    "description": " Durable construction, suitable for all skill levels, ensures optimal performance and precision during matches and training.",
+    "brand": "Adidas"
+  },
+  {
+    "name": "2022 Toyota Land Cruiser Prado: Reliable",
+    "categoryId": "automotive",
+    "image": "https://img.freepik.com/free-photo/3d-car-with-minimal-background_23-2150796916.jpg?t=st=1708275346~exp=1708278946~hmac=9ce2fe7d9da8beb08cd045e4eb00607a1b83f35c2a8d9b378149fdb40f4448d8&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/white-offroader-jeep-parking_114579-4007.jpg?w=1380&t=st=1708434704~exp=1708435304~hmac=8364a9ef5ac399f008839fd87fe2278847a8acfae7ea6c4f106783b87b3a1d39",
+      "https://img.freepik.com/free-photo/yellow-car-gas-station_23-2150697544.jpg?w=1380&t=st=1708434708~exp=1708435308~hmac=727754de33a13eedc5697a04c786d9b9991cab7206b5e7a555227619caef89b6",
+      "https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?w=1380&t=st=1708434712~exp=1708435312~hmac=d2897897f4db7d87f61fb2dd8ad56531fdc7a3b7550b64f4e480e48fe1106158",
+      "https://img.freepik.com/free-photo/view-3d-car-interior_23-2151138884.jpg?t=st=1708434730~exp=1708438330~hmac=a575b9c46d6670e18999d12f9ad9ba03dfdd47183d73bf7bfc1ce53b9d1168e9&w=1380"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Toyota",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "toyota@gmail.com",
+    "description": "2022 Toyota Land Cruiser Prado: Reliable, rugged, luxurious SUV with advanced features, perfect for off-road adventures and urban commutes.",
+    "brand": "Toyota"
+  },
+  {
+    "name": "Logitech Extreme 3D Pro",
+    "categoryId": "toys&games",
+    "image": "https://img.freepik.com/free-photo/futuristic-video-game-equipment-illuminated-nightclub-generative-ai_188544-32105.jpg?t=st=1708275566~exp=1708279166~hmac=e1399703febe7907343b1d63deebed62b2f117583d4688287d900f12ae2bd29c&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-vector/realistic-set-various-models-controllers-video-game-console-white-background-isolated-vector-illustration_1284-68538.jpg?w=900&t=st=1708434783~exp=1708435383~hmac=9d0d79fffe9a9633595d62a7940cea09a4691c5cded0c8398fd309129f7d30a5",
+      "https://img.freepik.com/free-vector/different-consoles-video-games-vector-illustrations-set-designs-gamepads-joysticks-devices-gamers-gadgets-playing-controlling-digital-games-technology-gaming-concept_74855-23013.jpg?w=1380&t=st=1708434788~exp=1708435388~hmac=50bef0610016b2fc4596d5824efc517d18aa5f9fff889f7b6088c897a76fdf49",
+      "https://img.freepik.com/free-photo/activity-control-cable-relaxation-station_1172-483.jpg?w=1380&t=st=1708434795~exp=1708435395~hmac=6985708dce0a213c1b36ff34fbd2ef7e6ebc1e80459e34a2ec4284a0bbda86b5",
+      "https://img.freepik.com/free-photo/top-view-virtual-reality-headset-with-joystick_23-2148912728.jpg?w=1380&t=st=1708434806~exp=1708435406~hmac=12a9ee2e8725dab94dbe4de5987d99689469c5ee3c17a11f24726a3d016c57dd"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Logitech",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "logitech@gmail.com",
+    "description": "Precise, ergonomic joystick with customizable buttons, ideal for flight simulations and immersive gaming experiences.",
+    "brand": "Logitech"
+  },
+  {
+    "name": "The Holy Quran",
+    "categoryId": "books&media",
+    "image": "https://img.freepik.com/free-photo/free-photo-ramadan-kareem-eid-mubarak-royal-elegant-lamp-with-mosque-holy-gate-with-fireworks_1340-23597.jpg?w=1380&t=st=1708434866~exp=1708435466~hmac=5fe738e5d4f117cf066fee1872829b89704c4bf21e42f733711b9b9db48120a1",
+    "subImages": [
+      "https://img.freepik.com/free-photo/free-photo-ramadan-kareem-eid-mubarak-royal-elegant-lamp-with-mosque-holy-gate-with-fireworks_1340-23603.jpg?t=st=1708434857~exp=1708435457~hmac=c9d73995030697b4c8cfb51542ee8d5d98b496660191f2772f215bf17226c0c8",
+      "https://img.freepik.com/free-photo/close-up-islamic-new-year-with-quran-book_23-2148611710.jpg?w=1380&t=st=1708434926~exp=1708435526~hmac=82f9554230444cd1b9e8bab6a44e059d48e147023e77f26c70c2ee90abbdcc90",
+      "https://img.freepik.com/free-photo/close-up-open-holy-book-with-bracelet_23-2148288851.jpg?w=1380&t=st=1708434932~exp=1708435532~hmac=2c6f1292e30edb4297fd39bb85585f0508a90f186b1a9ebceb02ac97864998ef",
+      "https://img.freepik.com/free-photo/top-view-islamic-new-year-with-quran-book_23-2148611705.jpg?w=1380&t=st=1708434949~exp=1708435549~hmac=86a04cc3bc3cfb7af6b46342b0ac7a6c341576a67e01acc1ad80859e2402d377"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Darussalam",
+    "available_quantity": 20,
+    "ratings": 5,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "darussalam@gmail.com",
+    "description": "Sacred scripture of Islam, containing divine revelations, guidance, and wisdom for believers worldwide, revered and studied extensively.",
+    "brand": "Darussalam"
+  },
+  {
+    "name": "Original Pure Honey",
+    "categoryId": "food&beverages",
+    "image": "https://img.freepik.com/free-photo/jar-honey-jar-honey_1340-23142.jpg?t=st=1708276062~exp=1708279662~hmac=8440aea0b2ebe7c934f2e8ac31dd9b0dbb5570592424d11ae505726086f76de4&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-vector/realistic-honey-bees-poster-with-editable-ornate-text-glass-can-with-flowers-flying-bee-vector-illustration_1284-83396.jpg?w=1380&t=st=1708435017~exp=1708435617~hmac=c08323093692e9a0e5e814b2618aaac22df2a83c3dd2d80ca19152f64beb75ef",
+      "https://img.freepik.com/free-photo/fresh-honeycombs_144627-17380.jpg?w=1060&t=st=1708435024~exp=1708435624~hmac=b636b301743386dc5ba0641cb575b2baa0731054d8f365e201a5b73f372e0b37",
+      "https://img.freepik.com/free-photo/honey-jar-ai-generated-image_268835-5046.jpg?t=st=1708435028~exp=1708438628~hmac=682e0841e7790810c07b7524061322b6e52f96ca118df07aface5c0ee1bace7d&w=1380",
+      "https://img.freepik.com/free-vector/jar-filled-with-honey-surrounded-by-bees_1268-15500.jpg?w=1480&t=st=1708435041~exp=1708435641~hmac=a47db4972381fa4cda20e2b908482d3b6b36f47aca67514fa86d648db8a4b3c4"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Wedderspoon",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "wedderspoon@gmail.com",
+    "description": "Butterscotch 1 Liter (Gold Item)",
+    "brand": "Wedderspoon"
+  },
+  {
+    "name": "RFL Pen",
+    "categoryId": "officesupplies",
+    "image": "https://img.freepik.com/free-photo/3d-rendering-various-pens_23-2150851464.jpg?t=st=1708276126~exp=1708279726~hmac=9191fcd530ec68cec4ec323bc4e2334872a119308da9c034a313ca654cf256d1&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/close-upon-white-pen_23-2150835648.jpg?t=st=1708435116~exp=1708438716~hmac=c77dd1017ab895a18661cf7fb8119043020bd739acf018c582ff07f026570484&w=1060",
+      "https://img.freepik.com/free-vector/photorealistic-fountain-pen-isolated-white-background_1284-46765.jpg?w=1380&t=st=1708435128~exp=1708435728~hmac=9c6fb9143261ea6822ed28df4eb18a7c4dd18aa2545871d9fcd78fa4648500a1",
+      "https://img.freepik.com/free-photo/3d-render-fountain-pen-blue-background_23-2150800983.jpg?t=st=1708435145~exp=1708438745~hmac=b1d86fda98580ca07112a2538afb4a7540857473ef52a5b495dc587c8659446a&w=1380",
+      "https://img.freepik.com/free-photo/3d-render-decorated-fountain-pen_23-2150800993.jpg?t=st=1708435158~exp=1708438758~hmac=884628fbaf6626fbaa67d6cd9eec0e696605171e53380904c73e86729a088d29&w=1380"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "RFL",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "rfl@gmail.com",
+    "description": "Reliable, affordable writing instruments crafted with precision, offering smooth ink flow for effortless writing experiences.",
+    "brand": "RFL"
+  },
+  {
+    "name": "Luna",
+    "categoryId": "pets",
+    "image": "https://img.freepik.com/free-photo/view-adorable-kitten-inside-house_23-2150758126.jpg?t=st=1708276263~exp=1708279863~hmac=fe78700373a0629a021b7ecd6168f7d44d3ab827cbf9148b8f158d74b961f0d8&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/cute-domestic-kitten-sits-window-staring-outside-generative-ai_188544-12519.jpg?w=1380&t=st=1708435227~exp=1708435827~hmac=cb539d230cb54a768677444d155b54d5b7a28b6affb8f6d5ba903f523b1e4b38",
+      "https://img.freepik.com/free-photo/closeup-shot-cute-white-brown-cat-isolated_181624-45586.jpg?w=1380&t=st=1708435232~exp=1708435832~hmac=b5548478f37240b34989db196781a007708e46059f2a30beafee60807cc9a9f8",
+      "https://img.freepik.com/free-photo/closeup-shot-one-ginger-cat-hugging-licking-other-isolated-white-wall_181624-32893.jpg?w=1380&t=st=1708435237~exp=1708435837~hmac=12def5d23a2118479a0c301f0273a0441ff9b349f980bde2bc0336dd34c82e18",
+      "https://img.freepik.com/free-photo/horizontal-shot-two-sitting-cats-blurred-background_181624-56173.jpg?w=1380&t=st=1708435241~exp=1708435841~hmac=1ddd115f4b0195c55f76abf2842b222f6a1bcbd7685057e0f13b1fb06a1bd4d4"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Whisker's Delight",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "whisker@gmail.com",
+    "description": "Premium cat food made with natural ingredients, ensuring optimal health and satisfaction for your beloved feline companion, Luna",
+    "brand": "Whisker"
+  },
+  {
+    "name": "Premium Diamond Ring",
+    "categoryId": "jewelry&accessories",
+    "image": "https://img.freepik.com/free-photo/shiny-platinum-wedding-ring-with-precious-gemstone-generated-by-ai_188544-10023.jpg?t=st=1708276579~exp=1708280179~hmac=61997f315268d7326ab6235f22fcced2d6915a51d5712b70accbb2a130fd942d&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/collection-gold-bangles-bracelets-with-diamonds-them_1340-42786.jpg?t=st=1708435304~exp=1708438904~hmac=2a912ba746ff5b9551242e5d2865ea4f56f4a1dda062c95121dc95af882072de&w=1380",
+      "https://img.freepik.com/free-photo/gleaming-ring-silk-with-shimmering-bokeh-lights_157027-3963.jpg?t=st=1708435316~exp=1708438916~hmac=02b3575350ea4c177811a7d65e8f82cd77501c01eee34f87af5cfe77d36901ca&w=1380",
+      "https://img.freepik.com/free-photo/gold-jewellery-table-with-other-gold-jewellery_1340-42836.jpg?t=st=1708435330~exp=1708438930~hmac=16621d419fbe44728e62f135500b84bbd4a1e98991a30f3bb3a79adaada5a27d&w=1380",
+      "https://img.freepik.com/free-photo/gleaming-ring-silk-with-shimmering-bokeh-lights_157027-3926.jpg?t=st=1708434648~exp=1708438248~hmac=522f9311907f5f2334035f9387ee21c46d823e3fe88402741f559442a5916b8f&w=1380"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Eternal Brilliance",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "eternalbrilliance@gmail.com",
+    "description": "Exquisite diamond ring crafted with timeless elegance, symbolizing everlasting love and commitment in every gleaming facet.",
+    "brand": "Eternal Brilliance"
+  },
+  {
+    "name": "Ethereal Dreamscapes",
+    "categoryId": "Arts&Crafts",
+    "image": "https://img.freepik.com/free-photo/3d-rendering-square-shape-surrounded-by-flowers_23-2150824408.jpg?t=st=1708276733~exp=1708280333~hmac=046253fdb40ab895b249278d876a397fc3dae2f47956f085f5efe795f6a0f9aa&w=1380",
+    "subImages": [
+      "https://img.freepik.com/free-photo/abstract-nature-illustration-tree-backdrop-watercolor-painted-image-generated-by-ai_188544-15564.jpg?w=1380&t=st=1708437091~exp=1708437691~hmac=140eb7f66de054a11fc49107594bf47b7f5dd57e1bc7a699ceb84d6e344ee095",
+      "https://img.freepik.com/free-photo/world-environment-earth-day-concept-generative-ai_169016-28723.jpg?w=1380&t=st=1708437099~exp=1708437699~hmac=8e7bdcd18e286c1eb2a705032a16a82124d45d7fc2d46b19e22e1f9de45c57b1",
+      "https://img.freepik.com/free-photo/abstract-colorful-splash-3d-background-generative-ai-background_60438-2494.jpg?w=1380&t=st=1708437104~exp=1708437704~hmac=d990136483442d856a434f6a246c85619168c1af2e4e357b42be8e08b877a145",
+      "https://img.freepik.com/free-photo/texture-background-with-different-exotic-leaves-generative-al_169016-28566.jpg?w=1380&t=st=1708437114~exp=1708437714~hmac=b27b43d3af7ec5bc1eb68d16256c58a1e350d29a1dce6f2750249e7a08f7c1b6"
+    ],
+    "price": 10,
+    "regularPrice": 12,
+    "reviews": [
+      {
+        "review": "This Product is very important to us!, and this products frequently use to use!",
+        "email": "admin@gmail.com",
+        "name": "Admin",
+        "createdAt": "13 February 2024",
+        "image": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=1380&t=st=1708422603~exp=1708423203~hmac=6dc74d068491520838de4d0f1e351569466dc4e662088c5fe09e25c540bd4ae1",
+        "ratings": 4.5
+      }
+    ],
+    "shop": "Serena Rivers",
+    "available_quantity": 20,
+    "ratings": 4,
+    "sells": 5,
+    "status": "approved",
+    "shopEmail": "serenarivers@gmail.com",
+    "description": "Ethereal Dreamscapes' evoke whimsical narratives, blending surrealism with ethereal beauty, inviting viewers into enchanted realms.",
+    "brand": "Serena Rivers"
+  }
+]

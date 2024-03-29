@@ -1,0 +1,74 @@
+[
+    {
+        "image": "https://images.pexels.com/photos/7207550/pexels-photo-7207550.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "name": "Harry Poter",
+        "email": "harry@gmail.com",
+        "number_of_classes": 20,
+        "name_of_classes": [
+            "fitness",
+            "gym",
+            "running"
+        ],
+        "students":30
+    },
+    {
+        "image": "https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "name": "Michel Harry",
+        "email": "michel@gmail.com",
+        "number_of_classes": 20,
+        "name_of_classes": [
+            "fitness",
+            "gym",
+            "running"
+        ],
+        "students":38
+    },
+    {
+        "image": "https://images.pexels.com/photos/5212338/pexels-photo-5212338.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "name": "Stiphen",
+        "email": "stiphen@gmail.com",
+        "number_of_classes": 20,
+        "name_of_classes": [
+            "fitness",
+            "gym",
+            "running"
+        ],
+        "students":35
+    },
+    {
+        "image": "https://images.pexels.com/photos/3837474/pexels-photo-3837474.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "name": "Charlie Put",
+        "email": "charlie@gmail.com",
+        "number_of_classes": 20,
+        "name_of_classes": [
+            "fitness",
+            "gym",
+            "running"
+        ],
+        "students":40
+    },
+    {
+        "image": "https://images.pexels.com/photos/7207353/pexels-photo-7207353.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "name": "Moris Hulk",
+        "email": "moris@gmail.com",
+        "number_of_classes": 20,
+        "name_of_classes": [
+            "fitness",
+            "gym",
+            "running"
+        ],
+        "students":50
+    },
+    {
+        "image": "https://images.pexels.com/photos/7092613/pexels-photo-7092613.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "name": "Adrew Russel",
+        "email": "Adrew@gmail.com",
+        "number_of_classes": 20,
+        "name_of_classes": [
+            "fitness",
+            "gym",
+            "running"
+        ],
+        "students":20
+    }
+]
