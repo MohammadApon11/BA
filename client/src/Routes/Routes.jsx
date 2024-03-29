@@ -9,7 +9,6 @@ import Dashboard from "../Layout/Dashboard";
 import StudentHome from "../Pages/Dashboard/Student/StudentHome/StudentHome";
 import Payment from "../Pages/Dashboard/Student/Payment/Payment";
 import MyEnrolled from "../Pages/Dashboard/Student/MyEnrolled/MyEnrolled";
-import PaymentsHistory from "../Pages/Dashboard/Student/PaymentsHistory/PaymentsHistory";
 import AddClass from "../Pages/Dashboard/Instructor/AddClass/AddClass";
 import MyClasses from "../Pages/Dashboard/Instructor/MyClasses/MyClasses";
 import ManageClasses from "../Pages/Dashboard/Admin/ManageClasses/ManageClasses";
@@ -21,6 +20,8 @@ import AddCart from "../Pages/products/AddCart";
 import CartPage from "../Pages/Dashboard/User/Cart/CartPage";
 import PaymentSuccess from "../Pages/Dashboard/PaymentSuccess/PaymentSuccess";
 import PaymentFail from "../Pages/Dashboard/PaymentFail/PaymentFail";
+import OrderHistory from "../Pages/Dashboard/Student/OrdersHistory/OrdersHistory";
+import Wishlists from "../Pages/Dashboard/Wishlists/Wishlists";
 
 const router = createBrowserRouter([
   {
@@ -79,22 +80,14 @@ const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      // students Route
-      {
-        path: "studentHome",
-        element: <StudentHome />,
-      },
-      {
-        path: "payment/:id",
-        element: <Payment />,
-      },
-      {
-        path: "enrolled",
-        element: <MyEnrolled />,
-      },
       {
         path: "history",
-        element: <PaymentsHistory />,
+        element: <OrderHistory />,
+      },
+
+      {
+        path: "wishlists",
+        element: <Wishlists />,
       },
 
       // instructor route

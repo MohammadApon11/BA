@@ -83,7 +83,7 @@ const NavigationBar = () => {
                 ? "/Dashboard/manageClasses"
                 : instructor
                 ? "/dashboard/addClass"
-                : "/dashboard/studentHome"
+                : "/dashboard/history"
             }
           >
             <MdSpaceDashboard size={20} /> Dashboard

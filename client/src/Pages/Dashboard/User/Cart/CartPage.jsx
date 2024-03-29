@@ -277,6 +277,7 @@ const CartPage = () => {
       if (updateStatus === "plus") {
         setPlusLoading(true);
       }
+
       if (updateStatus === "minus") {
         setMinusLoading(true);
       }
@@ -286,11 +287,6 @@ const CartPage = () => {
       );
 
       updateCart();
-
-      const response = await axios.put(
-        `${import.meta.env.VITE_API_URL}/cart/quantityUpdate/${productId}`,
-        { updateStatus }
-      );
 
       if (updateStatus === "minus" && cartResponse.data.quantity === 1) {
         Swal.fire({
@@ -303,6 +299,11 @@ const CartPage = () => {
         // updateCart();
         return;
       }
+
+      const response = await axios.put(
+        `${import.meta.env.VITE_API_URL}/cart/quantityUpdate/${productId}`,
+        { updateStatus }
+      );
 
       if (response.status === 200) {
         updateCart();
@@ -322,6 +323,9 @@ const CartPage = () => {
   const handleAddressOpen = () => {
     setAddressOpen(!addressOpen);
   };
+
+  console.log("checkedIdes",checkedIds);
+
   return (
     <div className="relative">
       <SectionWraper>
@@ -520,7 +524,7 @@ const CartPage = () => {
                             <LuMinus />
                           )}
                         </button>
-                        <span className="text-black w-[35px] h-[33px] flex items-center border-t border-b text-[14px] justify-center cursor-pointer bg-white">
+                        <span className="text-black w-[35px] h-[33px] flex items-center border-t border-b text-[14px] justify-center bg-white">
                           {item?.quantity}
                         </span>
                         <button
@@ -564,21 +568,15 @@ const CartPage = () => {
                       </span>{" "}
                       on the Shipping Page
                     </p>
-                    <div className="flex items-center gap-8 mt-2">
-                      <Link
-                        className="border-2 border-[#87298f] hover:text-white hover:bg-[#87298f] text-[#87298f] py-2 px-5 transition-all duration-300 rounded-sm"
-                        to="#"
-                      >
-                        Order as a Gift
-                      </Link>
-                      <Link
-                        className="text-white bg-[#f5bf2c] hover:bg-[#e6b329] transial py-[10px] px-6 transition-all duration-300 flex items-center gap-3 rounded-sm"
-                        to="#"
+                    <div className="flex items-center justify-end gap-8 mt-2">
+                      <button
+                        className={`text-white bg-[#f5bf2c] hover:bg-[#e6b329] transition-all duration-100 py-[12px] px-6 flex items-center gap-3 rounded-sm`}
                         onClick={handleAddressOpen}
+                        disabled={checkedIds.length > 0 ? false : true}
                       >
                         Place Order
                         <BsArrowRight className="text-xl" />
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -623,7 +621,7 @@ const CartPage = () => {
       </SectionWraper>
       <div className={`${addressOpen ? "visible" : "invisible"}`}>
         <div className="w-full h-full bg-black absolute top-0 opacity-70"></div>
-        <div className="bg-white border h-[470px] max-w-[380px] p-3 mt-7 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] fixed rounded-md">
+        <div className="bg-white border h-[540px] max-w-[380px] p-3 mt-3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] fixed rounded-md overflow-auto  scrollbar-webkit">
           <AddressModal handleAddressOpen={handleAddressOpen} />
         </div>
       </div>

@@ -41,3 +41,18 @@
 .addressInputBorder {
   border: 1px solid #495057;
 }
+
+/* scroll bar none in address bar */
+
+.scrollbar-webkit::-webkit-scrollbar {
+  width: 8px !important;
+}
+.scrollbar-webkit::-webkit-scrollbar-track {
+  background: white;
+}
+.scrollbar-webkit::-webkit-scrollbar-thumb {
+  background-color: rgb(31 42 55) !important;
+  border-radius: 20px;
+  border: 1px solid white;
+  height: 50px !important;
+}

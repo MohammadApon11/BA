@@ -13,7 +13,6 @@ const MyEnrolled = () => {
             .then(data => setEnrolled(data))
     }, [user])
 
-    console.log(enrolled)
     return (
         <Container>
             <div>
