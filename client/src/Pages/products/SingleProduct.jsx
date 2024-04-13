@@ -9,7 +9,7 @@ const SingleProduct = ({ product, index }) => {
   return (
     <Link
       to={`/product/${_id}`}
-      className={`border-l border-r p-[20px] group hover:shadow-lg`}
+      className={`border-l border-r p-[20px] group hover:shadow-lg text-gray-600`}
     >
       <div className="md:max-w-[250px] md:min-h-[160px] mx-auto overflow-hidden">
         <img

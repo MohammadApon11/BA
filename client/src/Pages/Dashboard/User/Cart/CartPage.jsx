@@ -324,7 +324,6 @@ const CartPage = () => {
     setAddressOpen(!addressOpen);
   };
 
-  console.log("checkedIdes",checkedIds);
 
   return (
     <div className="relative">

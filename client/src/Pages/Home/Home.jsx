@@ -7,6 +7,8 @@ import NavFixedGap from "../../components/gap's/NavFixedGap";
 import SectionGap from "../../components/gap's/SectionGap";
 import { Toaster } from "react-hot-toast";
 import PopularCategories from "../../components/Home/PopularCategories";
+import FlashSale from "../../components/Home/FlashSale";
+import ForYou from "../../components/Home/ForYou";
 
 const Home = () => {
   const [theme, setTheme] = useState("light");
@@ -27,7 +29,12 @@ const Home = () => {
       <Marque handleTheme={handleTheme}></Marque>
       <Hero />
       <SectionGap />
+      <FlashSale />
+      <SectionGap />
       <PopularCategories />
+      <SectionGap />
+      <ForYou />
+      <SectionGap />
       {/* <PopularInstructor />
       <PopularInstructor />
       <World /> */}

@@ -13,7 +13,7 @@ const CommonHero = ({ product, children }) => {
       <div className="z-20 flex items-center gap-2 text-white">
         <Link to={"/"}>Home</Link>{" "}
         <IoIosArrowForward className="text-gray-400" />
-        <Link to={"products"}>Products</Link>{" "}
+        <Link to={"/products"}>Products</Link>{" "}
         <IoIosArrowForward className="text-gray-400" />
         <Link to={`/products/${product?.categoryId}`}>
           {product?.categoryId}

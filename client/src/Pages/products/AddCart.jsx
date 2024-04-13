@@ -114,12 +114,12 @@ const AddCart = () => {
 
   const handleAddToCart = () => {
     const cartData = {
-      image,
-      price,
-      name,
       available_quantity,
-      shop,
       brand,
+      image,
+      name,
+      price,
+      shop,
       regularPrice,
       productId: _id,
       userEmail: user?.email,
@@ -202,17 +202,17 @@ const AddCart = () => {
             </span>
           </div>
           <div className="flex items-center gap-2 mt-[20px]">
-            <Link
+            {/* <Link
               to={""}
               className={`rounded-[24px] flex items-center justify-center gap-2 w-[200px] h-[50px] hover:bg-pink-400 bg-white text-black
                  hover:text-white shadow-md`}
             >
               <FiDollarSign /> Buy Now
-            </Link>
+            </Link> */}
             {isAlreadyAddedToCart ? (
               <Link
                 to={"/cart"}
-                className={`rounded-[24px] flex items-center justify-center gap-2 w-[200px] h-[50px]  hover:text-white ${
+                className={`rounded-[24px] flex items-center justify-center gap-2 w-[400px] h-[50px]  hover:text-white ${
                   isAlreadyAddedToCart
                     ? "hover:bg-[#f90] bg-white text-black hover:text-white shadow-md"
                     : "hover:bg-pink-400 bg-pink-500"
@@ -224,7 +224,7 @@ const AddCart = () => {
             ) : (
               <button
                 onClick={handleAddToCart}
-                className={`rounded-[24px] flex items-center justify-center gap-2 w-[200px] h-[50px] hover:bg-pink-400 bg-pink-500`}
+                className={`rounded-[24px] flex items-center justify-center gap-2 w-[400px] h-[50px] hover:bg-pink-400 bg-pink-500`}
               >
                 <FaCartPlus className="text-[20px]" />
                 Add to cart

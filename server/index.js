@@ -80,24 +80,39 @@ async function run() {
     const paymentsCollection = client.db("summerCamp").collection("payments");
     const enrolledCollection = client.db("summerCamp").collection("enrolled");
 
-    const tran_id = new ObjectId().toString();
+    // get flase sale
+    app.get("/flashsale", async (req, res) => {
+      const result = await productsCollection
+        .find({ flashSale: true })
+        .toArray();
+      res.send(result);
+    });
+
+    // get for you
+    app.get("/foryou", async (req, res) => {
+      const result = await productsCollection.find({ forYou: true }).toArray();
+      res.send(result);
+    });
+
     // payment related work start from here
+    const tran_id = new ObjectId().toString();
     app.post("/order", async (req, res) => {
       try {
         const {
           name,
           number,
-          email,
+          userEmail,
           currency,
           district,
           upazila,
           shippingAddress,
+          orderName,
         } = req.body;
 
         const cartItems = await cartCollection
-          .find({ userEmail: email, selectStatus: true })
+          .find({ userEmail: userEmail, selectStatus: true })
           .toArray();
-
+        console.log(req.body);
         if (!cartItems || cartItems.length === 0) {
           return res.status(404).json({ error: "No items found in the cart" });
         }
@@ -105,22 +120,22 @@ async function run() {
           (acc, item) => acc + parseInt(item.price) * parseInt(item.quantity),
           0
         );
-        
+
         const data = {
           total_amount: totalAmount,
           currency: currency,
           tran_id: tran_id, // use unique tran_id for each api call
-          success_url: `http://localhost:5000/payment/success/${tran_id}/${email}`,
+          success_url: `http://localhost:5000/payment/success/${tran_id}/${userEmail}`,
           // success_url: `http://localhost:5000/payment/success/${tran_id}`,
           fail_url: `http://localhost:5000/payment/fail/${tran_id}`,
           cancel_url: "http://localhost:3030/cancel",
           ipn_url: "http://localhost:3030/ipn",
           shipping_method: "Courier",
-          product_name: "Computer.",
+          product_name: orderName,
           product_category: "Electronic",
           product_profile: "general",
           cus_name: name,
-          cus_email: email,
+          cus_email: userEmail,
           cus_add1: upazila,
           cus_add2: district,
           cus_city: shippingAddress,
@@ -141,18 +156,22 @@ async function run() {
         const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
         sslcz.init(data).then((apiResponse) => {
           let GatewayPageURL = apiResponse.GatewayPageURL;
-          console.log("GatewayPageURL", GatewayPageURL);
+
           res.send({ url: GatewayPageURL });
+          const createdAt = new Date().toLocaleDateString();
           const finalOrder = {
             name,
             number,
-            email,
+            userEmail,
+            totalAmount,
             currency,
             district,
             upazila,
             shippingAddress,
             paidStatus: false,
             tranjectionId: tran_id,
+            createdAt,
+            orderName,
           };
           const result = orderCollection.insertOne(finalOrder);
         });
@@ -165,7 +184,7 @@ async function run() {
     });
 
     // payment succes route
-    app.post("/payment/success/:tranId/:email", async (req, res) => {
+    app.post("/payment/success/:tranId/:userEmail", async (req, res) => {
       const result = await orderCollection.updateOne(
         {
           tranjectionId: req.params.tranId,
@@ -179,7 +198,7 @@ async function run() {
 
       if (result.modifiedCount > 0) {
         await cartCollection.deleteMany({
-          userEmail: req.params.email,
+          userEmail: req.params.userEmail,
           selectStatus: true,
         });
 
@@ -197,6 +216,20 @@ async function run() {
       if (result.deletedCount) {
         res.redirect(`http://localhost:5173/payment/fail/${req.params.tranId}`);
       }
+    });
+
+    // get payment history
+    app.get("/order/:userEmail", async (req, res) => {
+      const userEmail = req.params.userEmail;
+      const query = { userEmail: userEmail, paidStatus: true };
+      const sortOptions = { date: -1 };
+
+      // Sort in descending order based on the "createdAt" field
+      const result = await orderCollection
+        .find(query)
+        .sort(sortOptions)
+        .toArray();
+      res.send(result);
     });
 
     // get all districts
@@ -280,7 +313,6 @@ async function run() {
     app.put("/cart", verifyJWT, async (req, res) => {
       try {
         const cartProduct = req.body;
-
         // Check if the product already exists in the cart
         const existingProduct = await cartCollection.findOne({
           productId: cartProduct.productId,
@@ -320,7 +352,6 @@ async function run() {
     // delete user cart products
     app.delete("/cart/:id", async (req, res) => {
       const id = req.params.id;
-      const query = { _id: new ObjectId(id) };
       const result = await cartCollection.deleteOne({ _id: new ObjectId(id) });
       res.send(result);
     });
@@ -347,6 +378,23 @@ async function run() {
         console.error("Error adding item to wishlist:", error);
         res.status(500).json({ message: "Internal server error" });
       }
+    });
+
+    // get wishlists products
+    app.get("/wishlists/:email", async (req, res) => {
+      const userEmail = req.params.email;
+      const cartData = await wishlistCollection
+        .find({ userEmail: userEmail })
+        .toArray();
+      res.json(cartData);
+    });
+
+    // delete wishlists products
+    app.delete("/wishlists/:id", async (req, res) => {
+      const id = req.params.id;
+      console.log("from wish", id);
+      const result = await wishlistCollection.deleteOne({ _id: id });
+      res.send(result);
     });
 
     // update quantity
@@ -442,7 +490,7 @@ async function run() {
         const objectIds = ids.map((id) => new ObjectId(id));
         // Update selectStatus for all items based on provided IDs
         const result = await cartCollection.updateMany(
-          { _id: { $in: objectIds} },
+          { _id: { $in: objectIds } },
           { $set: { selectStatus: selectStatus } }
         );
 

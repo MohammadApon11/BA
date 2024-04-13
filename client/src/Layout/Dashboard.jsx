@@ -5,6 +5,8 @@ import { FaUsersCog } from "react-icons/fa";
 import { SiGoogleclassroom } from "react-icons/si";
 import { AiOutlineHome } from "react-icons/ai";
 import { GiSelfLove } from "react-icons/gi";
+import { LuShoppingCart } from "react-icons/lu";
+import { MdHistory } from "react-icons/md";
 
 const Dashboard = () => {
   const [isAdmin] = useAdmin();
@@ -42,9 +44,7 @@ const Dashboard = () => {
                   src="https://images.unsplash.com/photo-1552168324-d612d77725e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                   alt=""
                 />
-                <h1 className="text-xl font-semibold uppercase">
-                  Sports World
-                </h1>
+                <h1 className="text-xl font-semibold uppercase">BAZAAR</h1>
               </Link>
             </div>
             <div className="flex-none hidden lg:block">
@@ -53,11 +53,8 @@ const Dashboard = () => {
                 {admin ? (
                   <ul className="flex items-center">
                     <li>
-                      <Link
-                        className="font-semibold hover:text-blue-700"
-                        to="/"
-                      >
-                        <AiOutlineHome className="text-xl" /> HOME
+                      <Link className=" hover:text-blue-700" to="/">
+                        <AiOutlineHome /> HOME
                       </Link>
                     </li>
                     <li>
@@ -124,39 +121,48 @@ const Dashboard = () => {
                 ) : (
                   <ul className="flex items-center">
                     <li>
-                      <Link
-                        className="hover:text-blue-700 font-semibold uppercase"
-                        to="/"
-                      >
-                        {" "}
-                        <AiOutlineHome className="text-xl" /> Home
+                      <Link className="hover:text-blue-700" to="/">
+                        <AiOutlineHome /> Home
                       </Link>
                     </li>
+
                     <li>
                       <NavLink
                         className={({ isActive }) =>
                           isActive
-                            ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                            : "hover:text-blue-700 font-semibold uppercase"
+                            ? "text-blue-600  tracking-wide transition-colors duration-200"
+                            : "hover:text-blue-700 "
                         }
                         to="/dashboard/history"
                       >
-                        <span className="text-xl ">❏</span>Payments History
+                        <MdHistory />
+                        Payments History
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
                         className={({ isActive }) =>
                           isActive
-                            ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
+                            ? "text-blue-600  transition-colors duration-200"
                             : "hover:text-blue-700 font-semibold uppercase"
                         }
                         to="/dashboard/wishlists"
                       >
-                        <span className="text-xl">
-                          <GiSelfLove />{" "}
-                        </span>
+                          <GiSelfLove />
                         Wishlists
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-blue-600 transition-colors duration-200"
+                            : "hover:text-blue-700"
+                        }
+                        to="/cart"
+                      >
+                          <LuShoppingCart />
+                        Go to cart
                       </NavLink>
                     </li>
                   </ul>

@@ -42,7 +42,7 @@ const OrderHistory = () => {
                       Paid
                     </div>
                   </td>
-                  <td className="text-green-500 border">Tk<span >{payment?.totalAmount}</span></td>
+                  <td className="text-green-500 border">Tk {payment?.totalAmount}</td>
                 </tr>
               ))}
             </tbody>

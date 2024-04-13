@@ -46,18 +46,18 @@ const NavigationBar = () => {
           Home
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           className={({ isActive }) =>
             isActive
               ? "text-pink-500   transition-colors duration-200"
               : "hover:text-pink-500 text-black  "
           }
-          to="/instructors"
+          to="/shops"
         >
           <SiShopee /> Shops
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink
           className={({ isActive }) =>
@@ -65,7 +65,7 @@ const NavigationBar = () => {
               ? "text-pink-500   tracking-wide transition-colors  duration-200"
               : "hover:text-pink-500   text-black"
           }
-          to="/classes"
+          to="/products"
         >
           <MdOutlineProductionQuantityLimits /> Products
         </NavLink>

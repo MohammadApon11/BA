@@ -1,6 +1,6 @@
 import React from "react";
 import NavFixedGap from "../../components/gap's/NavFixedGap";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import GetProductsByID from "../../hooks/GetProductsByID";
 import SectionWraper from "../../components/Wrapper's/SectionWraper";
 import SingleProduct from "./singleProduct";
@@ -63,6 +63,8 @@ const Products = () => {
     toast("Feature Coming Soon!", {
       icon: "⚠️",
     });
+  const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <SectionWraper>
       <NavFixedGap />
@@ -126,23 +128,31 @@ const Products = () => {
           </div>
         </div>
         <div className="lg:col-span-9 md:col-span-8 col-span-12">
-          <p className="text-black">
-            {products.length} Items found for{" "}
-            <span className="text-pink-500">
-              "
-              {categoryId === "officesupplies"
-                ? categoryId.split("su").join(" su").charAt(0).toUpperCase() +
-                  categoryId.split("su").join(" su").slice(1)
-                : categoryId.split("&").join(" & ").charAt(0).toUpperCase() +
-                  categoryId.split("&").join(" & ").slice(1)}
-              "
-            </span>
-          </p>
+          {pathname === "/products" ? (
+            <h1 className="text-gray-600">All products here</h1>
+          ) : (
+            <p className="text-black">
+              {products.length} Items found for{" "}
+              <span className="text-pink-500">
+                "
+                {categoryId === "officesupplies"
+                  ? categoryId.split("su").join(" su").charAt(0).toUpperCase() +
+                    categoryId.split("su").join(" su").slice(1)
+                  : categoryId.split("&").join(" & ").charAt(0).toUpperCase() +
+                    categoryId.split("&").join(" & ").slice(1)}
+                "
+              </span>
+            </p>
+          )}
           <Divider />
           <div className="grid lg:grid-cols-3 md:grid-cols-2 mobile:grid-cols-2 grid-cols-1 border-t border-b text-black">
-            {products.map((product, index) => (
-              <SingleProduct product={product} index={index} key={index} />
-            ))}
+            {pathname === "/products"
+              ? allProducts.map((product, index) => (
+                  <SingleProduct product={product} index={index} key={index} />
+                ))
+              : products.map((product, index) => (
+                  <SingleProduct product={product} index={index} key={index} />
+                ))}
           </div>
         </div>
       </div>

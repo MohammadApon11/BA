@@ -41,13 +41,13 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+      // {
+      //   path: "/shops",
+      //   element: <Instructors />,
+      // },
       {
-        path: "/instructors",
-        element: <Instructors />,
-      },
-      {
-        path: "/classes",
-        element: <Categories />,
+        path: "/products",
+        element: <Products />,
       },
       // update from
       {
