@@ -22,6 +22,11 @@ import PaymentSuccess from "../Pages/Dashboard/PaymentSuccess/PaymentSuccess";
 import PaymentFail from "../Pages/Dashboard/PaymentFail/PaymentFail";
 import OrderHistory from "../Pages/Dashboard/Student/OrdersHistory/OrdersHistory";
 import Wishlists from "../Pages/Dashboard/Wishlists/Wishlists";
+import Order from "../Pages/Dashboard/Shoper/Order/Order";
+import AddProducts from "../Pages/Dashboard/Shoper/AddProducts/AddProducts";
+import MyProducts from "../Pages/Dashboard/Shoper/MyProducts/MyProducts";
+import ManageProducts from "../Pages/Dashboard/Admin/ManageProducts/ManageProducts";
+import ManageOrders from "../Pages/Dashboard/Admin/ManageOrders/ManageOrders";
 
 const router = createBrowserRouter([
   {
@@ -84,26 +89,27 @@ const router = createBrowserRouter([
         path: "history",
         element: <OrderHistory />,
       },
-
       {
         path: "wishlists",
         element: <Wishlists />,
       },
-
-      // instructor route
+      // shoper route
       {
-        path: "addClass",
-        element: <AddClass />,
+        path: "addProducts",
+        element: <AddProducts />,
       },
       {
-        path: "myClasses",
-        element: <MyClasses />,
+        path: "myProducts",
+        element: <MyProducts />,
       },
-
       // admin route
       {
-        path: "manageClasses",
-        element: <ManageClasses />,
+        path: "manageProducts",
+        element: <ManageProducts />,
+      },
+      {
+        path: "manageOrders",
+        element: <ManageOrders />,
       },
       {
         path: "manageUsers",

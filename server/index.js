@@ -70,6 +70,7 @@ async function run() {
     const wishlistCollection = client.db("iceCream").collection("wishlist");
     const districtsCollection = client.db("iceCream").collection("districts");
     const upazilasCollection = client.db("iceCream").collection("upazilas");
+    const ecommerceUsersCollection = client.db("iceCream").collection("users");
 
     // older
     const usersCollection = client.db("summerCamp").collection("users");
@@ -79,6 +80,59 @@ async function run() {
     const selectedCollection = client.db("summerCamp").collection("selected");
     const paymentsCollection = client.db("summerCamp").collection("payments");
     const enrolledCollection = client.db("summerCamp").collection("enrolled");
+
+    // get all users
+    app.get("/users", async (req, res) => {
+      const result = await ecommerceUsersCollection.find().toArray();
+      res.send(result);
+    });
+    // put users
+    app.put("/users/:email", async (req, res) => {
+      const email = req.params.email;
+      const user = req.body;
+      const query = { email: email };
+      console.log("hit", user);
+      const options = { upsert: true };
+      const updatedDoc = {
+        $set: user,
+      };
+      const result = await ecommerceUsersCollection.updateOne(
+        query,
+        updatedDoc,
+        options
+      );
+      res.send(result);
+    });
+    // is admin
+    app.get("/users/admin/:email", verifyJWT, async (req, res) => {
+      const email = req.params.email;
+
+      if (req.decoded.email !== email) {
+        res.send({ admin: false });
+      }
+
+      const query = { email: email };
+      const user = await ecommerceUsersCollection.findOne(query);
+      const admin = { admin: user?.role === "admin" };
+      const shoper = { shoper: user?.role === "shoper" };
+      res.send({ admin, shoper });
+    });
+    // user role handle
+    app.put("/usersRole/:id", async (req, res) => {
+      const id = req.params.id;
+      const role = req.body;
+      const query = { _id: new ObjectId(id) };
+      const options = { upsert: true };
+      const updatedDoc = {
+        $set: { role: role.role },
+      };
+      const result = await ecommerceUsersCollection.updateOne(
+        query,
+        updatedDoc,
+        options
+      );
+      res.send(result);
+    });
 
     // get flase sale
     app.get("/flashsale", async (req, res) => {
@@ -182,6 +236,32 @@ async function run() {
           .json({ error: "An error occurred while processing the order" });
       }
     });
+    // get all orders
+    app.get("/allOrders", async (req, res) => {
+      const result = await orderCollection.find().toArray();
+      res.send(result);
+    });
+
+    // delete order by id
+    app.delete("/deleteOrder/:id", async (req, res) => {
+      const orderId = req.params.id;
+
+      try {
+        const result = await orderCollection.deleteOne({
+          _id: new ObjectId(orderId),
+        });
+
+        if (result.deletedCount === 0) {
+          return res.status(404).json({ message: "Order not found" });
+        }
+
+        res.status(200).json({ message: "Order deleted successfully" });
+      } catch (error) {
+        res
+          .status(500)
+          .json({ message: `Error deleting Order: ${error.message}` });
+      }
+    });
 
     // payment succes route
     app.post("/payment/success/:tranId/:userEmail", async (req, res) => {
@@ -253,15 +333,80 @@ async function run() {
     // get products by categoryId
     app.get("/products/:categoryId", async (req, res) => {
       const categoryId = req.params.categoryId;
-      const products = await productsCollection.find({ categoryId }).toArray();
+      const products = await productsCollection
+        .find({ categoryId, status: "approved" })
+        .toArray();
       res.json(products);
     });
 
-    // get all products
-    app.get("/products", async (req, res) => {
-      const query = { status: "approved" };
-      const result = await productsCollection.find(query).toArray();
+    // post product
+    app.post("/products", async (req, res) => {
+      const product = req.body;
+      const result = await productsCollection.insertOne(product);
       res.send(result);
+    });
+
+    // get all products
+    app.get("/allproducts", async (req, res) => {
+      const result = await productsCollection.find().toArray();
+      res.send(result);
+    });
+
+    // products status updated
+    app.put("/productsStatus/:id", verifyJWT, async (req, res) => {
+      const id = req.params.id;
+      const { status } = req.body;
+      console.log("status updated", status);
+      const filter = { _id: new ObjectId(id) };
+      const options = { upsert: true };
+      const result = await productsCollection.updateOne(
+        filter,
+        {
+          $set: {
+            status: status,
+          },
+        },
+        options
+      );
+      res.send(result);
+    });
+
+    // get approved products
+    app.get("/products", async (req, res) => {
+      const result = await productsCollection
+        .find({ status: "approved" })
+        .toArray();
+      res.send(result);
+    });
+
+    // get shoper all products
+    app.get("/myProducts/:email", async (req, res) => {
+      const email = req.params.email;
+      const result = await productsCollection
+        .find({ shopEmail: email })
+        .toArray();
+      res.send(result);
+    });
+
+    // Delete a product by ID
+    app.delete("/deleteProduct/:id", async (req, res) => {
+      const productId = req.params.id;
+
+      try {
+        const result = await productsCollection.deleteOne({
+          _id: new ObjectId(productId),
+        });
+
+        if (result.deletedCount === 0) {
+          return res.status(404).json({ message: "Product not found" });
+        }
+
+        res.status(200).json({ message: "Product deleted successfully" });
+      } catch (error) {
+        res
+          .status(500)
+          .json({ message: `Error deleting product: ${error.message}` });
+      }
     });
 
     // get product by id
@@ -550,13 +695,6 @@ async function run() {
       res.send({ token });
     });
 
-    // post classes
-    app.post("/classes", async (req, res) => {
-      const singleClass = req.body;
-      const result = await productsCollection.insertOne(singleClass);
-      res.send(result);
-    });
-
     // feed updated
     app.put("/classes/:id", verifyJWT, async (req, res) => {
       const id = req.params.id;
@@ -614,61 +752,6 @@ async function run() {
     // get instructors
     app.get("/instructors", async (req, res) => {
       const result = await instructorCollection.find().toArray();
-      res.send(result);
-    });
-
-    // put users
-    app.put("/users/:email", async (req, res) => {
-      const email = req.params.email;
-      const user = req.body;
-      const query = { email: email };
-      const options = { upsert: true };
-      const updatedDoc = {
-        $set: user,
-      };
-      const result = await usersCollection.updateOne(
-        query,
-        updatedDoc,
-        options
-      );
-      res.send(result);
-    });
-
-    // user role handle
-    app.put("/usersRole/:id", async (req, res) => {
-      const id = req.params.id;
-      const role = req.body;
-      const query = { _id: new ObjectId(id) };
-      const options = { upsert: true };
-      const updatedDoc = {
-        $set: { role: role.role },
-      };
-      const result = await usersCollection.updateOne(
-        query,
-        updatedDoc,
-        options
-      );
-      res.send(result);
-    });
-
-    // is admin
-    app.get("/users/admin/:email", verifyJWT, async (req, res) => {
-      const email = req.params.email;
-
-      if (req.decoded.email !== email) {
-        res.send({ admin: false });
-      }
-
-      const query = { email: email };
-      const user = await usersCollection.findOne(query);
-      const admin = { admin: user?.role === "admin" };
-      const instructor = { instructor: user?.role === "instructor" };
-      res.send({ admin, instructor });
-    });
-
-    // get all users
-    app.get("/users", async (req, res) => {
-      const result = await usersCollection.find().toArray();
       res.send(result);
     });
 

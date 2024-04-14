@@ -1,17 +1,22 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import useAdmin from "../hooks/useAdmin";
 import Foot from "../Pages/Shared/Foot/Foot";
-import { FaUsersCog } from "react-icons/fa";
-import { SiGoogleclassroom } from "react-icons/si";
 import { AiOutlineHome } from "react-icons/ai";
 import { GiSelfLove } from "react-icons/gi";
 import { LuShoppingCart } from "react-icons/lu";
-import { MdHistory } from "react-icons/md";
+import { IoMdAddCircle } from "react-icons/io";
+import {
+  MdManageAccounts,
+  MdManageHistory,
+  MdOutlineProductionQuantityLimits,
+  MdHistory,
+} from "react-icons/md";
+import { FaJediOrder } from "react-icons/fa";
 
 const Dashboard = () => {
   const [isAdmin] = useAdmin();
   const admin = isAdmin?.admin?.admin;
-  const instructor = isAdmin?.instructor?.instructor;
+  const shoper = isAdmin?.shoper?.shoper;
 
   return (
     <div>
@@ -49,124 +54,124 @@ const Dashboard = () => {
             </div>
             <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">
-                {/* Navbar menu content here */}
-                {admin ? (
-                  <ul className="flex items-center">
-                    <li>
-                      <Link className=" hover:text-blue-700" to="/">
-                        <AiOutlineHome /> HOME
-                      </Link>
-                    </li>
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600 normal-case font-bold tracking-wide transition-colors duration-200"
-                            : "hover:text-blue-700 font-semibold"
-                        }
-                        to="/dashboard/manageClasses"
-                      >
-                        <FaUsersCog size={20} /> MANAGE CLASSES
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600 normal-case font-bold tracking-wide transition-colors duration-200 "
-                            : "font-bold hover:text-blue-700 "
-                        }
-                        to="/dashboard/manageUsers"
-                      >
-                        <FaUsersCog size={20} /> MANAGE USERS
-                      </NavLink>
-                    </li>
-                  </ul>
-                ) : instructor ? (
-                  <ul className="flex items-center">
-                    <li>
-                      <Link
-                        className="hover:text-blue-700 font-semibold"
-                        to="/"
-                      >
-                        <AiOutlineHome className="text-xl" /> HOME
-                      </Link>
-                    </li>
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600 font-semibold tracking-wide transition-colors duration-200 uppercase"
-                            : "hover:text-blue-700 font-semibold uppercase"
-                        }
-                        to="/dashboard/addClass"
-                      >
-                        <SiGoogleclassroom /> Add Classes
-                      </NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200 "
-                            : "hover:text-blue-700 font-semibold uppercase"
-                        }
-                        to="/dashboard/myClasses"
-                      >
-                        <SiGoogleclassroom /> My Classes
-                      </NavLink>
-                    </li>
-                  </ul>
-                ) : (
-                  <ul className="flex items-center">
-                    <li>
-                      <Link className="hover:text-blue-700" to="/">
-                        <AiOutlineHome /> Home
-                      </Link>
-                    </li>
-
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600  tracking-wide transition-colors duration-200"
-                            : "hover:text-blue-700 "
-                        }
-                        to="/dashboard/history"
-                      >
-                        <MdHistory />
-                        Payments History
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600  transition-colors duration-200"
-                            : "hover:text-blue-700 font-semibold uppercase"
-                        }
-                        to="/dashboard/wishlists"
-                      >
+                <ul className="flex items-center">
+                  <li>
+                    <Link className="hover:text-blue-700" to="/">
+                      <AiOutlineHome /> Home
+                    </Link>
+                  </li>
+                  {admin && (
+                    <>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600  tracking-wide transition-colors duration-200"
+                              : "hover:text-blue-700 "
+                          }
+                          to="/dashboard/manageProducts"
+                        >
+                          <MdManageAccounts /> Manage Products
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600  tracking-wide transition-colors duration-200"
+                              : "hover:text-blue-700 "
+                          }
+                          to="/dashboard/manageOrders"
+                        >
+                          <FaJediOrder /> Manage Orders
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600  tracking-wide transition-colors duration-200"
+                              : "hover:text-blue-700 "
+                          }
+                          to="/dashboard/manageUsers"
+                        >
+                          <MdManageHistory /> Manage Users
+                        </NavLink>
+                      </li>
+                    </>
+                  )}
+                  {shoper && (
+                    <>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600  transition-colors duration-200"
+                              : "hover:text-blue-700 "
+                          }
+                          to="/dashboard/addProducts"
+                        >
+                          <IoMdAddCircle /> Add Products
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600  transition-colors duration-200"
+                              : "hover:text-blue-700 "
+                          }
+                          to="/dashboard/myProducts"
+                        >
+                          <MdOutlineProductionQuantityLimits /> My Products
+                        </NavLink>
+                      </li>
+                    </>
+                  )}
+                  {!admin && !shoper && (
+                    <>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600 transition-colors duration-200"
+                              : "hover:text-blue-700 "
+                          }
+                          to="/dashboard/history"
+                        >
+                          <MdHistory />
+                          Payments History
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600  transition-colors duration-200"
+                              : "hover:text-blue-700 font-semibold uppercase"
+                          }
+                          to="/dashboard/wishlists"
+                        >
                           <GiSelfLove />
-                        Wishlists
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        className={({ isActive }) =>
-                          isActive
-                            ? "text-blue-600 transition-colors duration-200"
-                            : "hover:text-blue-700"
-                        }
-                        to="/cart"
-                      >
+                          Wishlists
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive
+                              ? "text-blue-600 transition-colors duration-200"
+                              : "hover:text-blue-700"
+                          }
+                          to="/cart"
+                        >
                           <LuShoppingCart />
-                        Go to cart
-                      </NavLink>
-                    </li>
-                  </ul>
-                )}
+                          Go to cart
+                        </NavLink>
+                      </li>
+                    </>
+                  )}
+                </ul>
               </ul>
             </div>
           </div>
@@ -177,126 +182,122 @@ const Dashboard = () => {
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
           <ul className="menu p-4 w-52 h-full bg-base-200">
             {/* Sidebar content here */}
+            <li>
+              <Link className="hover:text-blue-700" to="/">
+                <AiOutlineHome /> Home
+              </Link>
+            </li>
             {admin ? (
-              <ul>
-                <li>
-                  <Link
-                    className="hover:text-blue-700 uppercase font-semibold"
-                    to="/"
-                  >
-                    <AiOutlineHome className="text-xl" /> Home
-                  </Link>
-                </li>
+              <>
+                {" "}
                 <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 font-semibold uppercase"
+                        ? "text-blue-600transition-colors duration-200"
+                        : "hover:text-blue-700"
                     }
-                    to="/dashboard/manageClasses"
+                    to="/dashboard/manageProducts"
                   >
-                    <FaUsersCog size={20} /> Manage Classes
+                    <MdManageAccounts /> Manage Products
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 uppercase font-semibold"
+                        ? "text-blue-600transition-colors duration-200"
+                        : "hover:text-blue-700"
+                    }
+                    to="/dashboard/manageOrders"
+                  >
+                    <FaJediOrder /> Manage Orders
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-blue-600 transition-colors duration-200"
+                        : "hover:text-blue-700"
                     }
                     to="/dashboard/manageUsers"
                   >
-                    <FaUsersCog size={20} /> Manage Users
+                    <MdManageHistory /> Manage Users
                   </NavLink>
                 </li>
-              </ul>
-            ) : instructor ? (
-              <ul>
-                <li>
-                  <Link
-                    className="hover:text-blue-700  uppercase font-semibold"
-                    to="/"
-                  >
-                    <AiOutlineHome className="text-xl" /> Home
-                  </Link>
-                </li>
+              </>
+            ) : shoper ? (
+              <>
                 <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 font-semibold uppercase"
+                        ? "text-blue-600  transition-colors duration-200"
+                        : "hover:text-blue-700"
                     }
-                    to="/dashboard/addClass"
+                    to="/dashboard/addProducts"
                   >
-                    <SiGoogleclassroom /> Add Classes
+                    <IoMdAddCircle /> Add Products
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 font-semibold uppercase"
+                        ? "text-blue-600 transition-colors duration-200"
+                        : "hover:text-blue-700"
                     }
-                    to="/dashboard/myClasses"
+                    to="/dashboard/myProducts"
                   >
-                    <SiGoogleclassroom /> My Classes
+                    <MdOutlineProductionQuantityLimits /> My Products
                   </NavLink>
                 </li>
-              </ul>
+              </>
             ) : (
-              <ul>
-                <li>
-                  <Link
-                    className="hover:text-blue-700 uppercase font-semibold"
-                    to="/"
-                  >
-                    <AiOutlineHome className="text-xl" /> Home
-                  </Link>
-                </li>
-
+              <>
                 <li>
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 font-semibold uppercase"
-                    }
-                    to="/dashboard/studentHome"
-                  >
-                    <span className="text-xl">✔ </span>My Selected Classes
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 uppercase font-semibold"
-                    }
-                    to="/dashboard/enrolled"
-                  >
-                    <span className="text-xl">☑ </span>My Erolled Classes
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "text-blue-600 uppercase font-semibold tracking-wide transition-colors duration-200"
-                        : "hover:text-blue-700 uppercase font-semibold"
+                        ? "text-blue-600 transition-colors duration-200"
+                        : "hover:text-blue-700"
                     }
                     to="/dashboard/history"
                   >
-                    <span className="text-xl ">❏</span> My Enrolled History
+                    <MdHistory />
+                    Payments History
                   </NavLink>
                 </li>
-              </ul>
+
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-blue-600 transition-colors duration-200"
+                        : "hover:text-blue-700"
+                    }
+                    to="/dashboard/wishlists"
+                  >
+                    <GiSelfLove />
+                    Wishlists
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-blue-600 transition-colors duration-200"
+                        : "hover:text-blue-700"
+                    }
+                    to="/cart"
+                  >
+                    <LuShoppingCart />
+                    Go to cart
+                  </NavLink>
+                </li>
+              </>
             )}
           </ul>
         </div>

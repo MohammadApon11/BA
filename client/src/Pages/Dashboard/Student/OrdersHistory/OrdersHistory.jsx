@@ -26,7 +26,7 @@ const OrderHistory = () => {
               <tr>
                 <th>Sl</th>
                 <th>Order Name</th>
-                <th>Enrolled Date : Sorted</th>
+                <th>Payment Date : Sorted</th>
                 <th>Status</th>
                 <th>Total Cost</th>
               </tr>

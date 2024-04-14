@@ -24,7 +24,7 @@ const NavigationBar = () => {
   };
   const [isAdmin] = useAdmin();
   const admin = isAdmin?.admin?.admin;
-  const instructor = isAdmin?.instructor?.instructor;
+  const shoper = isAdmin?.shoper?.shoper;
 
   const navItem = (
     <>
@@ -80,9 +80,9 @@ const NavigationBar = () => {
             }
             to={
               admin
-                ? "/Dashboard/manageClasses"
-                : instructor
-                ? "/dashboard/addClass"
+                ? "/Dashboard/manageProducts"
+                : shoper
+                ? "/dashboard/addProducts"
                 : "/dashboard/history"
             }
           >
