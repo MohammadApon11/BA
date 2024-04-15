@@ -11,9 +11,9 @@ const SingleProduct = ({ product, index }) => {
       to={`/product/${_id}`}
       className={`border-l border-r p-[20px] group hover:shadow-lg text-gray-600`}
     >
-      <div className="md:max-w-[250px] md:min-h-[160px] mx-auto overflow-hidden">
+      <div className="md:max-w-[250px] md:h-[160px] mx-auto overflow-hidden rounded-2xl">
         <img
-          className="w-full h-full rounded-sm group-hover:scale-125 transition-all duration-300"
+          className="w-full h-full  group-hover:scale-125 transition-all duration-300"
           src={image}
           alt={name}
         />
@@ -21,9 +21,9 @@ const SingleProduct = ({ product, index }) => {
       <h5 className="md:mt-[40px] mt-[25px] md:text-[24px] text-[22px]">
         {name}
       </h5>
-      <span className="text-[15px] group-hover:text-[#108ee9]">
+      <p className="text-[15px] group-hover:text-[#108ee9]">
         {description.substring(0, 34)}...
-      </span>
+      </p>
       <div className="flex items-center mt-[10px] gap-[3px] text-[14px] text-gray-400">
         <FaStar className="text-[#ffde37]" />
         <span>

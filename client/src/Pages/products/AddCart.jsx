@@ -7,12 +7,9 @@ import CommonHero from "../../components/Hero's/CommonHero";
 import SectionGap from "../../components/gap's/SectionGap";
 import { Rating, Star } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
-import AddToCartBtn from "../../components/btn's/AddToCartBtn";
 import { FaCartPlus } from "react-icons/fa";
-import { FiDollarSign } from "react-icons/fi";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
-import useAxiosSecure from "../../hooks/useAxiosSecure";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +18,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { MdOutlineDiscount } from "react-icons/md";
 import useCart from "../../hooks/PostCartData";
 import GetCartDataByEmail from "../../hooks/GetCartDataByEmail";
-import { useUtilsContext } from "../../providers/UtilsProviders";
+import { UseScrollTop } from "../../hooks/useScrollTop";
 
 const customStyles = {
   itemShapes: Star,
@@ -39,11 +36,10 @@ const AddCart = () => {
   const { id } = useParams();
   const { product } = GetSingleProduct(id);
   const { user } = useAuth();
-  const { addToCart, error } = useCart();
+  const { addToCart } = useCart();
   const [targetImage, setTargetImage] = useState(null);
   const [showAllReviews, setShowALlReviews] = useState(false);
   const navgate = useNavigate();
-
   const {
     image,
     price,
@@ -58,12 +54,7 @@ const AddCart = () => {
     _id,
   } = product;
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
     if (!user) {
@@ -141,26 +132,29 @@ const AddCart = () => {
 
   return (
     <SectionWraper>
+      <UseScrollTop />
       <NavFixedGap />
       <CommonHero product={product} />
       <SectionGap />
       <div className="grid grid-cols-12 gap-x-4 border p-4">
         <div className="col-span-5">
-          <div className="max-w-full h-[300px] relative">
+          <div className="max-w-full h-[300px] relative overflow-hidden rounded-2xl">
             <img
-              className="p-2 w-full h-full"
+              className="p-2 w-full h-full rounded-3xl"
               src={targetImage === null ? image : targetImage}
               alt=""
             />
           </div>
           <div className="grid grid-cols-4 mt-[40px] ml-2">
             {subImages?.map((image, index) => (
-              <img
-                key={index}
-                className="border p-2 cursor-pointer w-full h-[80px]"
-                onClick={() => setTargetImage(image)}
-                src={image}
-              />
+              <div className="border p-2 h-[80px]">
+                <img
+                  key={index}
+                  className="cursor-pointer w-full h-full rounded-lg"
+                  onClick={() => setTargetImage(image)}
+                  src={image}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -202,13 +196,6 @@ const AddCart = () => {
             </span>
           </div>
           <div className="flex items-center gap-2 mt-[20px]">
-            {/* <Link
-              to={""}
-              className={`rounded-[24px] flex items-center justify-center gap-2 w-[200px] h-[50px] hover:bg-pink-400 bg-white text-black
-                 hover:text-white shadow-md`}
-            >
-              <FiDollarSign /> Buy Now
-            </Link> */}
             {isAlreadyAddedToCart ? (
               <Link
                 to={"/cart"}
@@ -224,7 +211,7 @@ const AddCart = () => {
             ) : (
               <button
                 onClick={handleAddToCart}
-                className={`rounded-[24px] flex items-center justify-center gap-2 w-[400px] h-[50px] hover:bg-pink-400 bg-pink-500`}
+                className={`rounded-[24px] text-white flex items-center justify-center gap-2 w-[400px] h-[50px] hover:bg-pink-400 bg-pink-500`}
               >
                 <FaCartPlus className="text-[20px]" />
                 Add to cart

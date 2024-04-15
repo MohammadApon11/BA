@@ -18,6 +18,7 @@ import {
   FaShoppingBasket,
 } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
+import { UseScrollTop } from "../../hooks/useScrollTop";
 
 const footerData = [
   {
@@ -67,6 +68,7 @@ const Products = () => {
   console.log(pathname);
   return (
     <SectionWraper>
+      <UseScrollTop />
       <NavFixedGap />
       <div className="grid grid-cols-12 gap-x-4 md:mt-[40px] mt-[20px]">
         <div className="lg:col-span-3 md:col-span-4 md:block hidden">

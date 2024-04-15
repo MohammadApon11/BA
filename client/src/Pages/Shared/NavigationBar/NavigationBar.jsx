@@ -37,8 +37,8 @@ const NavigationBar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-black  transition-colors duration-200"
-              : "hover:text-pink-500  text-black"
+              ? "text-black  transition-colors hover:bg-transparent duration-200"
+              : "hover:text-pink-500 hover:bg-transparent text-black"
           }
           to="/"
         >
@@ -46,24 +46,12 @@ const NavigationBar = () => {
           Home
         </NavLink>
       </li>
-      {/* <li>
-        <NavLink
-          className={({ isActive }) =>
-            isActive
-              ? "text-pink-500   transition-colors duration-200"
-              : "hover:text-pink-500 text-black  "
-          }
-          to="/shops"
-        >
-          <SiShopee /> Shops
-        </NavLink>
-      </li> */}
       <li>
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-pink-500   tracking-wide transition-colors  duration-200"
-              : "hover:text-pink-500   text-black"
+              ? "text-pink-500 transition-colors hover:bg-transparent duration-200"
+              : "hover:text-pink-500  hover:bg-transparent text-black"
           }
           to="/products"
         >
@@ -75,8 +63,8 @@ const NavigationBar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "text-pink-500  transition-colors duration-200 "
-                : "hover:text-pink-500 text-black "
+                ? "text-pink-500 transition-colors duration-200 hover:bg-transparent"
+                : "hover:text-pink-500 text-black hover:bg-transparent"
             }
             to={
               admin
@@ -93,7 +81,7 @@ const NavigationBar = () => {
       <li>
         {user && (
           <Link
-            className=" text-black hover:text-pink-500"
+            className=" text-black hover:text-pink-500 hover:bg-transparent"
             onClick={handleLogout}
           >
             <IoIosLogOut /> logout
@@ -106,7 +94,7 @@ const NavigationBar = () => {
   const { allCartData } = GetCartDataByEmail(user?.email);
 
   return (
-    <div className="fixed top-0 w-full z-[1000] bg-white">
+    <div className="fixed top-0 w-full z-[1000] bg-white shadow-md">
       <SectionWraper>
         <div className="navbar">
           <div className="navbar-start">
@@ -131,18 +119,16 @@ const NavigationBar = () => {
                   src="/color.png"
                   alt=""
                 />
-                <p className="normal-case text-black text-xl font-semibold ">
-                  BAZAAR
-                </p>
+                <p className=" text-black text-xl font-semibold ">BAZAAR</p>
               </Link>
             </div>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{navItem}</ul>
           </div>
-          <div className="navbar-end gap-4">
+          <div className="navbar-end gap-4 text-black">
             <Link to={"/cart"} className="relative cursor-pointer">
-              <BsCart4 className="text-[35px] text-black" />
+              <BsCart4 className="text-[35px] " />
               <div className="bg-pink-500 text-white w-[20px] h-[20px] absolute top-0 -right-1 flex items-center justify-center text-[14px] rounded-[50%]">
                 {allCartData?.length}
               </div>
@@ -154,8 +140,8 @@ const NavigationBar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "text-pink-500 uppercase font-semibold tracking-wide transition-colors duration-200"
-                      : "hover:text-pink-500 uppercase font-semibold"
+                      ? "text-pink-500 transition-colors duration-200 flex items-center gap-2 hover:bg-transparent"
+                      : "hover:text-pink-500 flex items-center gap-2 hover:bg-transparent"
                   }
                   to="/login"
                 >
@@ -164,8 +150,8 @@ const NavigationBar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "text-pink-500 uppercase font-semibold tracking-wide transition-colors duration-200"
-                      : "hover:text-pink-500 uppercase font-semibold"
+                      ? "text-pink-500 transition-colors duration-200 flex items-center gap-2 hover:bg-transparent"
+                      : "hover:text-pink-500 flex items-center gap-2 hover:bg-transparent"
                   }
                   to="/register"
                 >

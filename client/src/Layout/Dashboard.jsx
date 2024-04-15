@@ -176,7 +176,9 @@ const Dashboard = () => {
             </div>
           </div>
           {/* Page content here */}
-          <Outlet />
+          <div className="bg-gray-50">
+            <Outlet />
+          </div>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-3" className="drawer-overlay"></label>

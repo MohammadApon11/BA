@@ -324,16 +324,17 @@ const CartPage = () => {
     setAddressOpen(!addressOpen);
   };
 
-
   return (
     <div className="relative">
       <SectionWraper>
         <NavFixedGap />
         {allCartData.length > 0 ? (
-          <div className={`grid grid-cols-12 gap-6 mt-[35px]`}>
+          <div
+            className={`grid lg:grid-cols-12 gap-6 xl:mt-[35px] lg:mt-[20px] md:mt-[15px]`}
+          >
             <div className={`col-span-9 gap-x-9 rounded-[4px]`}>
               <div
-                className={`bg-white text-black pt-[10px] shadow-md ${
+                className={`bg-white text-black pt-[10px] shadow-md max-md:hidden block ${
                   checkedIds.length > 0 ? "block" : "hidden"
                 }`}
               >
@@ -419,7 +420,7 @@ const CartPage = () => {
                     : "✅ You'll Get 2 color card"}
                 </div>
               </div>
-              <div className="bg-white p-[24px] flex items-center justify-between  mt-[35px] text-black shadow-md">
+              <div className="bg-white p-[24px] flex items-center justify-between lg:mt-[35px] mt-[25px] text-black shadow-md">
                 <div className="flex items-center gap-2  text-[15px]">
                   <div
                     className={`w-[20px] h-[20px] border-2 rounded-[4px] cursor-pointer flex items-center justify-center ${
@@ -460,12 +461,12 @@ const CartPage = () => {
               <div className="mt-[35px] border bg-white">
                 {allCartData?.map((item, index) => (
                   <div
-                    className={`border grid grid-cols-12 p-6 ${
+                    className={`border grid md:grid-cols-12 p-6 ${
                       checkedIds.includes(item?._id) ? "bg-red-50" : "bg-white"
                     }`}
                     key={index}
                   >
-                    <div className="col-span-8 flex items-center gap-5">
+                    <div className="col-span-8 flex items-center max-sm:justify-between gap-5">
                       <div
                         className={`w-[20px] h-[20px] border-2 rounded-[4px] cursor-pointer flex items-center justify-center
                   ${checkedIds.includes(item._id) ? "bg-[#17a2b8]" : "bg-white"}
@@ -480,7 +481,11 @@ const CartPage = () => {
                           }`}
                         />
                       </div>
-                      <img className="w-[35%]" src={item?.image} alt="" />
+                      <img
+                        className="sm:w-[35%] w-[25%]"
+                        src={item?.image}
+                        alt=""
+                      />
                       <div className="text-black">
                         <h6 className="text-lg">{item?.name}</h6>
                         <p className="text-[14px]">{item?.brand}</p>
@@ -502,7 +507,7 @@ const CartPage = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="col-span-4 flex items-center justify-between">
+                    <div className="col-span-4 flex items-center justify-between max-md:mt-5 max-md:ml-10">
                       <div className="flex items-center text-sm">
                         <button
                           onClick={() =>
@@ -546,7 +551,7 @@ const CartPage = () => {
                           )}
                         </button>
                       </div>
-                      <div>
+                      <div className="max-md:ml-3">
                         <p className="text-black">
                           {item?.quantity * item?.price} Tk.
                         </p>
@@ -581,12 +586,12 @@ const CartPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-3 h-[270px] flex flex-col gap-5 text-black border bg-white p-6">
+            <div className="max-lg:hidden lg:block col-span-3 h-[270px] text-black border bg-white p-6">
               <div className="flex items-center gap-3">
                 <img src="/icons/return.svg" alt="" />
                 <span className="text-[14px]">Cash on Delivery Available</span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 my-5">
                 <img src="/icons/replacement.svg" alt="" />
                 <span className="text-[14px]">7 Days Replacement Policy</span>
               </div>
@@ -594,7 +599,7 @@ const CartPage = () => {
                 <img src="/icons/moneyback.svg" alt="" />
                 <span className="text-[14px]">100% Money Back Guarantee</span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 my-5">
                 <img src="/icons/purchase.svg" alt="" />
                 <span className="text-[14px]">Purchase & Earn Points</span>
               </div>

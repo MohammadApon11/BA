@@ -4,11 +4,11 @@ import Foot from "../Pages/Shared/Foot/Foot";
 
 const Main = () => {
   return (
-    <>
+    <div className="bg-gray-50">
       <NavigationBar />
       <Outlet />
       <Foot />
-    </>
+    </div>
   );
 };
 

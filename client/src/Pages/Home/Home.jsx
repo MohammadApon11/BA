@@ -9,10 +9,12 @@ import { Toaster } from "react-hot-toast";
 import PopularCategories from "../../components/Home/PopularCategories";
 import FlashSale from "../../components/Home/FlashSale";
 import ForYou from "../../components/Home/ForYou";
+import { UseScrollTop } from "../../hooks/useScrollTop";
 
 const Home = () => {
   return (
-    <div className="dark:bg-black">
+    <div>
+      <UseScrollTop />
       <NavFixedGap />
       <Marque></Marque>
       <Hero />
@@ -23,9 +25,9 @@ const Home = () => {
       <SectionGap />
       <ForYou />
       <SectionGap />
-      {/* <PopularInstructor />
-      <PopularInstructor />
-      <World /> */}
+      <div className="py-5">
+      <World />
+      </div>
       <Toaster />
     </div>
   );
