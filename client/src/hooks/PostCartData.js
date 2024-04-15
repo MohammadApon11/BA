@@ -2,7 +2,6 @@ import { useState } from "react";
 import useAxiosSecure from "./useAxiosSecure";
 import Swal from "sweetalert2";
 import { useUtilsContext } from "../providers/UtilsProviders";
-import axios from "axios";
 
 const useCart = () => {
   const [cartData, setCartData] = useState(null);
@@ -14,7 +13,7 @@ const useCart = () => {
   const addToCart = async (productData) => {
     try {
       setLoading(true);
-      const response = await axios.put("/cart", productData);
+      const response = await axiosSecure.put("/cart", productData);
       setCartData(response.data);
       updateCart();
       Swal.fire({

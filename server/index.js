@@ -637,6 +637,15 @@ async function run() {
       }
     });
 
+    // jwt token collect
+    app.post("/jwt", (req, res) => {
+      const user = req.body;
+      const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
+        expiresIn: "15d",
+      });
+      res.send({ token });
+    });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log(
