@@ -19,7 +19,7 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const googleProvider = new GoogleAuthProvider();
 
   const createUser = (email, password) => {
@@ -59,11 +59,11 @@ const AuthProvider = ({ children }) => {
           })
           .then((data) => {
             localStorage.setItem("access-token", data.data.token);
+            setLoading(false);
           });
       } else {
         localStorage.removeItem("access-token");
       }
-      setLoading(false);
     });
     return () => {
       return unsubscribe();
