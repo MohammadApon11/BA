@@ -1,4 +1,3 @@
-import Container from "../../Pages/Shared/Container/Container";
 import { BsStopwatch, BsFillCupHotFill } from "react-icons/bs";
 import { FiMonitor } from "react-icons/fi";
 import SectionWraper from "../Wrapper's/SectionWraper";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SectionWraper from "../Wrapper's/SectionWraper";
-import SingleProduct from "../../Pages/products/singleProduct";
+import OneProduct from "../../Pages/products/OneProduct";
 
 const FlashSale = () => {
   const [products, setProducts] = useState([]);
@@ -27,7 +27,7 @@ const FlashSale = () => {
       <h3 className="text-black text-[24px] mb-[15px]">Flash Sale</h3>
       <div className="mt-4 grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
         {products?.map((product, index) => (
-          <SingleProduct key={index} index={index} product={product} />
+          <OneProduct key={index} index={index} product={product} />
         ))}
       </div>
     </SectionWraper>

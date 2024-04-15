@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import PopularInstructor from "../../components/Home/PopularInstructor";
 import World from "../../components/Home/World";
 import Marque from "../../components/Home/Marquee";
 import Hero from "../../components/Home/Hero";
@@ -16,7 +14,7 @@ const Home = () => {
     <div>
       <UseScrollTop />
       <NavFixedGap />
-      <Marque></Marque>
+      <Marque />
       <Hero />
       <SectionGap />
       <FlashSale />
@@ -26,7 +24,7 @@ const Home = () => {
       <ForYou />
       <SectionGap />
       <div className="py-5">
-      <World />
+        <World />
       </div>
       <Toaster />
     </div>

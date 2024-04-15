@@ -3,7 +3,6 @@ import NavFixedGap from "../../components/gap's/NavFixedGap";
 import { Link, useLocation, useParams } from "react-router-dom";
 import GetProductsByID from "../../hooks/GetProductsByID";
 import SectionWraper from "../../components/Wrapper's/SectionWraper";
-import SingleProduct from "./singleProduct";
 import Divider from "../../components/divider's/Divider";
 import useCategories from "../../hooks/GetAllCategories";
 import GetAllProducts from "../../hooks/GetAllProducts";
@@ -19,6 +18,7 @@ import {
 } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import { UseScrollTop } from "../../hooks/useScrollTop";
+import OneProduct from "./OneProduct";
 
 const footerData = [
   {
@@ -150,10 +150,10 @@ const Products = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 mobile:grid-cols-2 grid-cols-1 border-t border-b text-black">
             {pathname === "/products"
               ? allProducts.map((product, index) => (
-                  <SingleProduct product={product} index={index} key={index} />
+                  <OneProduct product={product} index={index} key={index} />
                 ))
               : products.map((product, index) => (
-                  <SingleProduct product={product} index={index} key={index} />
+                  <OneProduct product={product} index={index} key={index} />
                 ))}
           </div>
         </div>

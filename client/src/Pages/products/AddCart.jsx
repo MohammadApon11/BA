@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import GetSingleProduct from "../../hooks/GetSingleProduct";
 import NavFixedGap from "../../components/gap's/NavFixedGap";

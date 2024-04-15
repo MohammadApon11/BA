@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
-const SingleProduct = ({ product, index }) => {
+const OneProduct = ({ product, index }) => {
   const { name, image, description, ratings, sells, price, _id } = product;
   const freeDelivery = true;
 
@@ -42,4 +42,4 @@ const SingleProduct = ({ product, index }) => {
     </Link>
   );
 };
-export default SingleProduct;
+export default OneProduct;
