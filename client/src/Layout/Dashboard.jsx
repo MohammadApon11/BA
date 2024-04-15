@@ -19,8 +19,8 @@ const Dashboard = () => {
   const shoper = isAdmin?.shoper?.shoper;
 
   return (
-    <div>
-      <div className="drawer mb-10">
+    <div className="bg-gray-50">
+      <div className="drawer pb-10">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}

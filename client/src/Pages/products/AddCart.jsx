@@ -147,7 +147,7 @@ const AddCart = () => {
           </div>
           <div className="grid grid-cols-4 mt-[40px] ml-2">
             {subImages?.map((image, index) => (
-              <div className="border p-2 h-[80px]">
+              <div className="border p-2 h-[80px]" key={index}>
                 <img
                   key={index}
                   className="cursor-pointer w-full h-full rounded-lg"

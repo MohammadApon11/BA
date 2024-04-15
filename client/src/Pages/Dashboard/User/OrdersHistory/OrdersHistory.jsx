@@ -12,7 +12,7 @@ const OrderHistory = () => {
   }, [user]);
 
   return (
-    <div>
+    <>
       <div>
         <h1 className="text-center text-4xl font-semibold mt-20 mb-10 text-gray-600">
           My All Payments History Here
@@ -55,7 +55,7 @@ const OrderHistory = () => {
           </table>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
