@@ -31,9 +31,6 @@ const AllUsers = () => {
             })
     }
 
-    const handleDelete = user => {
-        console.log(user)
-    }
     return (
         <div className="w-full lg:px-16">
             <h3 className="text-4xl font-semibold">Total Users: {users.length}</h3>

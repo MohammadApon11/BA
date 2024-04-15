@@ -4,7 +4,6 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
 import { FcGoogle } from "react-icons/fc";
 import { saveUser } from "../../api/auth";
-import { TbFidgetSpinner } from "react-icons/tb";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";

@@ -2,6 +2,7 @@ import React from "react";
 import NavFixedGap from "../../../components/gap's/NavFixedGap";
 import { Link, useParams } from "react-router-dom";
 import { HiOutlineXMark } from "react-icons/hi2";
+
 const PaymentFail = () => {
   const { tranId } = useParams();
   return (

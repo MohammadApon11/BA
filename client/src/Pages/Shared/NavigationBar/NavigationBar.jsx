@@ -6,7 +6,6 @@ import {
   MdOutlineProductionQuantityLimits,
 } from "react-icons/md";
 import { TiHome } from "react-icons/ti";
-import { SiShopee } from "react-icons/si";
 import { IoIosLogOut } from "react-icons/io";
 import { TbLogin } from "react-icons/tb";
 import { IoCreate } from "react-icons/io5";

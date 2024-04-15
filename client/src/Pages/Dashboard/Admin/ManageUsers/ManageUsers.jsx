@@ -18,7 +18,6 @@ const ManageUsers = () => {
   const handleRole = (id, role) => {
     axiosSecure.put(`/usersRole/${id}`, { role }).then((res) => {
       setRefresh(!refresh);
-      console.log("from admin", res.data);
     });
   };
 
