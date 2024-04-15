@@ -128,7 +128,7 @@ const NavigationBar = () => {
               <Link to="/" className="flex items-center gap-3">
                 <img
                   className="h-10 lg:w-10 w-14 rounded-full"
-                  src="https://images.unsplash.com/photo-1552168324-d612d77725e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                  src="/color.png"
                   alt=""
                 />
                 <p className="normal-case text-black text-xl font-semibold ">

@@ -11,22 +11,10 @@ import FlashSale from "../../components/Home/FlashSale";
 import ForYou from "../../components/Home/ForYou";
 
 const Home = () => {
-  const [theme, setTheme] = useState("light");
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
-
-  const handleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
   return (
     <div className="dark:bg-black">
       <NavFixedGap />
-      <Marque handleTheme={handleTheme}></Marque>
+      <Marque></Marque>
       <Hero />
       <SectionGap />
       <FlashSale />

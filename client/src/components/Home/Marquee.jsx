@@ -1,7 +1,8 @@
 import Marquee from "react-fast-marquee";
 import SectionWraper from "../Wrapper's/SectionWraper";
+import toast from "react-hot-toast";
 
-const Marque = ({ handleTheme }) => {
+const Marque = () => {
   return (
     <SectionWraper>
       <div className="flex items-center py-3">
@@ -16,10 +17,10 @@ const Marque = ({ handleTheme }) => {
           to stabilizers.
         </Marquee>
         <button
-          className="btn bg-pink-500 text-white hover:bg-pink-500 rounded-l-none lg:btn-sm btn-xs"
-          onClick={handleTheme}
+          onClick={() => toast.success("Just Read!😊")}
+          className="btn cursor-text bg-pink-500 text-white hover:bg-pink-500 rounded-l-none lg:btn-sm btn-xs"
         >
-          Dark Mode
+          Headline
         </button>
       </div>
     </SectionWraper>

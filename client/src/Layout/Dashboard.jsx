@@ -24,7 +24,7 @@ const Dashboard = () => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
-          <div className="w-full navbar bg-base-300">
+          <div className="w-full navbar bg-base-300 text-gray-200">
             <div className="flex-none lg:hidden">
               <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
                 <svg
@@ -46,7 +46,7 @@ const Dashboard = () => {
               <Link className="flex items-center px-2 mx-2 gap-3" to="/">
                 <img
                   className="h-10 w-10  rounded-full"
-                  src="https://images.unsplash.com/photo-1552168324-d612d77725e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FtZXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                  src="/white.png"
                   alt=""
                 />
                 <h1 className="text-xl font-semibold uppercase">BAZAAR</h1>
