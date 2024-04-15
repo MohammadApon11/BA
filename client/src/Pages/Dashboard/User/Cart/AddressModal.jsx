@@ -147,11 +147,11 @@ const AddressModal = ({ handleAddressOpen }) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-3 mb-3">
-        <div className="w-1/2">
+      <div className="flex items-center gap-3 my-3">
+        <div>
           <input
             type="text"
-            className="text-[#495057] placeholder:text-[#495057] text-[16px] addressInputBorder outline-none my-0"
+            className="text-[#495057] w-[165px] bg-transparent pl-3 py-2 placeholder:text-[#495057] text-[16px] addressInputBorder outline-none my-0"
             {...register("name", { required: true })}
             placeholder="Your Name"
           />
@@ -161,9 +161,9 @@ const AddressModal = ({ handleAddressOpen }) => {
             </span>
           )}
         </div>
-        <div className="w-1/2">
+        <div>
           <input
-            className="text-[#495057] placeholder:text-[#495057] text-[16px]addressInputBorder outline-none my-0"
+            className="text-[#495057] w-[165px] bg-transparent pl-3 py-2 placeholder:text-[#495057] text-[16px] addressInputBorder outline-none my-0 border border-black"
             {...register("number", { required: true })}
             placeholder="Your Number"
           />{" "}
@@ -175,7 +175,7 @@ const AddressModal = ({ handleAddressOpen }) => {
         </div>
       </div>
       <div className="flex items-center gap-3 mb-3">
-        <div className="w-1/2">
+        <div className="w-[50%]">
           <div
             className="border-[#495057] border rounded-sm text-sm  h-[45px] text-[#495057] flex items-center justify-between px-3 relative cursor-pointer select-dropdown"
             onClick={() => setIsOpen(isOpen === "districts" ? "" : "districts")}
@@ -206,7 +206,7 @@ const AddressModal = ({ handleAddressOpen }) => {
             <span className="text-[14px] text-red-500">{districtError}</span>
           )}
         </div>
-        <div className="w-1/2">
+        <div className="w-[50%]">
           <div
             className="border-[#495057] border rounded-sm text-sm h-[45px] text-[#495057] flex items-center justify-between px-3 relative select-dropdown cursor-pointer"
             onClick={() => setIsOpen(isOpen === "upazilas" ? "" : "upazilas")}
@@ -290,7 +290,7 @@ const AddressModal = ({ handleAddressOpen }) => {
       <div>
         <input
           type="text"
-          className="text-[#495057] placeholder:text-[#495057] text-[16px] w-full addressInputBorder outline-none my-0"
+          className="text-[#495057] bg-transparent pl-3 py-2 placeholder:text-[#495057] text-[16px] w-full addressInputBorder outline-none my-0"
           {...register("orderName", { required: true })}
           placeholder="Type Order Name (anything)"
         />
@@ -312,7 +312,7 @@ const AddressModal = ({ handleAddressOpen }) => {
         <span className="text-[14px] text-red-500">{textareaError}</span>
       )}
       <input
-        className="bg-[#0397d3] text-white rounded-md cursor-pointer"
+        className="bg-[#0397d3] hover:bg-[#0398d3eb] py-2 w-full my-4 text-white rounded-md cursor-pointer"
         type="submit"
         value="Pay"
       />

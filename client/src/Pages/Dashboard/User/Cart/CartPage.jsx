@@ -625,7 +625,7 @@ const CartPage = () => {
       </SectionWraper>
       <div className={`${addressOpen ? "visible" : "invisible"}`}>
         <div className="w-full h-full bg-black absolute top-0 opacity-70"></div>
-        <div className="bg-white border h-[540px] max-w-[380px] p-3 mt-3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] fixed rounded-md overflow-auto  scrollbar-webkit">
+        <div className="bg-white border h-[450px] max-w-[380px] p-3 mt-3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] fixed rounded-md overflow-auto  scrollbar-webkit">
           <AddressModal handleAddressOpen={handleAddressOpen} />
         </div>
       </div>

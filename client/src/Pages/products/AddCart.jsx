@@ -341,7 +341,7 @@ const AddCart = () => {
                   className="h-[120px] w-full bg-transparent border rounded-md outline-none p-[15px]"
                   {...register("review")}
                 ></textarea>
-                <button className="bg-pink-500 hover:bg-pink-400">
+                <button className="bg-pink-500 text-white px-5 rounded-md py-1 hover:bg-pink-400">
                   Submit
                 </button>
               </form>
